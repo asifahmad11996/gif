@@ -1,0 +1,160 @@
+{
+  "bot": "@FoxiGrowbot",
+  "brand": "FoxiGrow",
+  "version": "1.0.0",
+  "assets": [
+    {
+      "id": "task_center_daily",
+      "trigger": "daily_digest",
+      "banner": "banners/task-center.png",
+      "gif": "gifs/task-center-live.gif",
+      "caption": "☀️ Task Center is live — 21 tasks available, 3 drip tasks releasing soon. Earn USDT + FG today!",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
+        { "text": "View Rank", "url": "https://t.me/FoxiGrowbot/app?startapp=rank" }
+      ]
+    },
+    {
+      "id": "must_do_all",
+      "trigger": "onboarding_incomplete",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "⚡ 5 quick wins waiting — Link Twitter, TikTok, Instagram, YouTube & Facebook to earn +10 FG (+$0.10) and unlock all tasks.",
+      "buttons": [
+        { "text": "Complete Setup", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks_must_do" }
+      ]
+    },
+    {
+      "id": "must_do_twitter",
+      "trigger": "account_unlinked_twitter",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "🐦 Link your Twitter/X account — +2 FG (+$0.02). Required for follow & comment tasks.",
+      "buttons": [
+        { "text": "Link Twitter", "url": "https://t.me/FoxiGrowbot/app?startapp=link_twitter" }
+      ]
+    },
+    {
+      "id": "must_do_tiktok",
+      "trigger": "account_unlinked_tiktok",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "🎵 Link your TikTok account — +2 FG (+$0.02). Unlock follow tasks for creators like vapepieteam.",
+      "buttons": [
+        { "text": "Link TikTok", "url": "https://t.me/FoxiGrowbot/app?startapp=link_tiktok" }
+      ]
+    },
+    {
+      "id": "must_do_instagram",
+      "trigger": "account_unlinked_instagram",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "📸 Link your Instagram account — +2 FG (+$0.02). One tap, instant reward.",
+      "buttons": [
+        { "text": "Link Instagram", "url": "https://t.me/FoxiGrowbot/app?startapp=link_instagram" }
+      ]
+    },
+    {
+      "id": "must_do_youtube",
+      "trigger": "account_unlinked_youtube",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "▶️ Link your YouTube account — +2 FG (+$0.02). Required for subscribe & share tasks.",
+      "buttons": [
+        { "text": "Link YouTube", "url": "https://t.me/FoxiGrowbot/app?startapp=link_youtube" }
+      ]
+    },
+    {
+      "id": "must_do_facebook",
+      "trigger": "account_unlinked_facebook",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "👍 Link your Facebook account — +2 FG (+$0.02). Unlock follow & share rewards.",
+      "buttons": [
+        { "text": "Link Facebook", "url": "https://t.me/FoxiGrowbot/app?startapp=link_facebook" }
+      ]
+    },
+    {
+      "id": "high_value_20",
+      "trigger": "task_highlight",
+      "task_id": 11630,
+      "banner": "banners/high-value-20-task.png",
+      "gif": "gifs/high-value-20-task.gif",
+      "caption": "💰 $20 Task live — Reward paid in two parts: $11 + $9. Read instructions carefully. +110 FG available. Task #11630.",
+      "buttons": [
+        { "text": "View Task #11630", "url": "https://t.me/FoxiGrowbot/app?startapp=task_11630" }
+      ]
+    },
+    {
+      "id": "download_register",
+      "trigger": "task_highlight",
+      "task_id": 12209,
+      "banner": "banners/download-register.png",
+      "gif": "gifs/new-task-alert.gif",
+      "caption": "📲 Download & Register — Earn +1 FG (+$0.15). One of today's best-value tasks. #12209",
+      "buttons": [
+        { "text": "Start Task #12209", "url": "https://t.me/FoxiGrowbot/app?startapp=task_12209" }
+      ]
+    },
+    {
+      "id": "drip_soon",
+      "trigger": "drip_release_teaser",
+      "banner": "banners/drip-tasks-soon.png",
+      "gif": "gifs/drip-tasks-soon.gif",
+      "caption": "💧 3 drip tasks releasing soon. Limited slots — stay in the app and be ready to claim first!",
+      "buttons": [
+        { "text": "Open Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "daily_top_tasks",
+      "trigger": "daily_top_picks",
+      "banner": "banners/daily-digest.png",
+      "gif": "gifs/task-center-live.gif",
+      "caption": "📬 Today's top tasks:\n1. 💰 $20 Task — +110 FG (#11630)\n2. 📲 Download & Register — +$0.15 (#12209)\n3. 🏆 (HQ) Follow SportixAI — +$0.044 (#11516)\n4. 🎵 Follow vapepieteam — +$0.03 (#12178)\n5. ✍️ Twitter Comments — +$0.02 (#12371)",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "social_follow_batch",
+      "trigger": "social_tasks_available",
+      "banner": "banners/social-follow-earn.png",
+      "gif": "gifs/social-follow-earn.gif",
+      "caption": "🔥 Follow & earn on X, TikTok, YouTube & Facebook. Rewards from +$0.03 to +$0.044 per task. 21 tasks available now!",
+      "buttons": [
+        { "text": "Browse Social Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "new_task_generic",
+      "trigger": "new_task_published",
+      "banner": "banners/task-center.png",
+      "gif": "gifs/new-task-alert.gif",
+      "caption": "🆕 New task available: {task_name}\nReward: +{fg_reward} FG (+${usd_reward})\nTask #{task_id}",
+      "buttons": [
+        { "text": "View Task", "url": "https://t.me/FoxiGrowbot/app?startapp=task_{task_id}" }
+      ]
+    },
+    {
+      "id": "low_slots_warning",
+      "trigger": "task_slots_low",
+      "banner": "banners/task-center.png",
+      "gif": "gifs/new-task-alert.gif",
+      "caption": "⚠️ {task_name} — only {slots} slots left!\n+{fg_reward} FG (+${usd_reward}). Grab it before it's gone. #{task_id}",
+      "buttons": [
+        { "text": "Claim Now", "url": "https://t.me/FoxiGrowbot/app?startapp=task_{task_id}" }
+      ]
+    },
+    {
+      "id": "idle_user_nudge",
+      "trigger": "user_idle_24h",
+      "banner": "banners/daily-digest.png",
+      "gif": "gifs/task-center-live.gif",
+      "caption": "🦊 We miss you! 21 tasks are still open on FoxiGrow. Quick wins: TikTok follow (+$0.03), Twitter follow (+$0.04).",
+      "buttons": [
+        { "text": "Earn Now", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    }
+  ]
+}
