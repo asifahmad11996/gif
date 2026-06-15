@@ -155,6 +155,20 @@
       "buttons": [
         { "text": "Earn Now", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
       ]
+    },
+    {
+      "id": "youtube_watch_tasks_update",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "banner": "banners/youtube-watch-update.png",
+      "gif": "gifs/youtube-watch-update.gif",
+      "caption_file": "posts/youtube-watch-tasks-update.txt",
+      "caption": "📢 Important Announcement: YouTube Watch Tasks Update\n\nHello everyone,\n\nTo improve task quality and ensure proper completion, a new requirement will be applied to all future YouTube watch tasks.\n\n✅ Requirement\n\nBefore starting any YouTube watch task (including search-based viewing or direct playback), you must enable the \"Stats for Nerds\" setting as shown in the tutorial video.\n\nHow to enable:\n1. Open the video on YouTube\n2. Right-click on the video player\n3. Select \"Stats for nerds\"\n\nOnce enabled, task completion will be based on the Dropped Frames count shown in Stats for nerds — not a fixed minimum watch time (e.g. 4500 / 7500, or as assigned per task).\n\nℹ️ Why this changed\nThis helps us verify that the video was actually played with the required setting enabled, keeping tasks fair for everyone.\n\n📌 Important Notes\n\n• Enable Stats for nerds BEFORE you start watching\n• Follow all task instructions carefully — do not skip steps\n• Check your task page for the exact Dropped Frames target\n• Submit proof only after the required count is reached\n• Submitting screenshots without proper completion may result in rejection; repeated violations may affect your account\n\n🎥 Tutorial\n\nPlease watch the attached tutorial video carefully and follow the steps exactly before starting any YouTube watch task.\n\n⏰ Effective immediately for all new YouTube watch tasks (direct and search-based).\n\nThank you for your cooperation. 🦊",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
+        { "text": "Watch Tutorial", "url": "https://t.me/FoxiGrow" }
+      ],
+      "attach_tutorial_video": true
     }
   ]
 }
