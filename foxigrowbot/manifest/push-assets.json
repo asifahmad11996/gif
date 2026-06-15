@@ -90,7 +90,7 @@
       "trigger": "task_highlight",
       "task_id": 12209,
       "banner": "banners/download-register.png",
-      "gif": "gifs/new-task-alert.gif",
+      "gif": "gifs/download-register.gif",
       "caption": "📲 Download & Register — Earn +1 FG (+$0.15). One of today's best-value tasks. #12209",
       "buttons": [
         { "text": "Start Task #12209", "url": "https://t.me/FoxiGrowbot/app?startapp=task_12209" }

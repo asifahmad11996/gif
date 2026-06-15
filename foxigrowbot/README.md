@@ -35,6 +35,7 @@ foxigrowbot/
 | `high-value-20-task.gif` | $20 task alert with coin rain |
 | `drip-tasks-soon.gif` | Drip countdown animation |
 | `new-task-alert.gif` | Generic new task / low-slots alert |
+| `download-register.gif` | Download & Register task animation |
 | `social-follow-earn.gif` | Rotating social follow highlights |
 
 ## Bot integration
@@ -48,6 +49,8 @@ Load `manifest/push-assets.json` and match on `trigger` (or `task_id` for task-s
 
 **Variables for templated captions:**
 - `{task_name}`, `{task_id}`, `{fg_reward}`, `{usd_reward}`, `{slots}`
+
+GIFs are generated from the matching banner artwork with Ken Burns zoom, glow pulse, and sparkle overlays (480×270, ~1.5MB each).
 
 ## Regenerate GIFs
 

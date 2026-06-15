@@ -1,297 +1,220 @@
 #!/usr/bin/env python3
-"""Generate FoxiGrow bot push notification GIFs."""
+"""Generate FoxiGrow bot GIFs animated from banner artwork."""
 
 from __future__ import annotations
 
 import math
+import random
+import shutil
+import subprocess
+import tempfile
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance
 
 ROOT = Path(__file__).resolve().parents[1]
+BANNERS = ROOT / "banners"
 OUT = ROOT / "gifs"
 
-# FoxiGrow brand palette
-BG_TOP = (18, 24, 42)
-BG_BOTTOM = (10, 14, 28)
-ORANGE = (255, 140, 50)
-GOLD = (255, 200, 80)
-WHITE = (245, 247, 255)
-MINT = (72, 220, 180)
-PINK = (255, 110, 150)
+OUTPUT_SIZE = (480, 270)
+FRAMES = 24
+FRAME_MS = 100
+FPS = 10
+
+GOLD = (255, 210, 80)
+MINT = (100, 240, 200)
+WHITE = (255, 255, 255)
 
 
-def lerp(a: int, b: int, t: float) -> int:
-    return int(a + (b - a) * t)
+def cover_crop(img: Image.Image, size: tuple[int, int]) -> Image.Image:
+    target_w, target_h = size
+    src_w, src_h = img.size
+    scale = max(target_w / src_w, target_h / src_h)
+    new_w, new_h = int(src_w * scale), int(src_h * scale)
+    resized = img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+    left = (new_w - target_w) // 2
+    top = (new_h - target_h) // 2
+    return resized.crop((left, top, left + target_w, top + target_h))
 
 
-def gradient_bg(size: tuple[int, int], frame: int, total: int) -> Image.Image:
+def zoom_pan_frame(
+    base: Image.Image,
+    size: tuple[int, int],
+    scale: float,
+    pan_x: float,
+    pan_y: float,
+) -> Image.Image:
     w, h = size
-    pulse = 0.5 + 0.5 * math.sin(2 * math.pi * frame / total)
-    img = Image.new("RGB", size)
-    draw = ImageDraw.Draw(img)
-    for y in range(h):
-        t = y / max(h - 1, 1)
-        r = lerp(BG_TOP[0], BG_BOTTOM[0], t)
-        g = lerp(BG_TOP[1], BG_BOTTOM[1], t)
-        b = lerp(BG_TOP[2], BG_BOTTOM[2], t)
-        glow = int(12 * pulse * (1 - abs(t - 0.35) * 2))
-        draw.line([(0, y), (w, y)], fill=(r + glow, g + glow // 2, b))
-    return img
+    canvas = Image.new("RGB", (w, h), (0, 0, 0))
+    zoomed_w = int(w * scale)
+    zoomed_h = int(h * scale)
+    zoomed = base.resize((zoomed_w, zoomed_h), Image.Resampling.LANCZOS)
+    max_x = zoomed_w - w
+    max_y = zoomed_h - h
+    left = int(max_x * (0.5 + pan_x * 0.5))
+    top = int(max_y * (0.5 + pan_y * 0.5))
+    left = max(0, min(left, max_x))
+    top = max(0, min(top, max_y))
+    canvas.paste(zoomed.crop((left, top, left + w, top + h)))
+    return canvas
 
 
-def load_font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    candidates = [
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
-    ]
-    for path in candidates:
-        if Path(path).exists():
-            return ImageFont.truetype(path, size)
-    return ImageFont.load_default()
+def sparkle_overlay(size: tuple[int, int], frame: int, total: int, seed: int, count: int = 18) -> Image.Image:
+    w, h = size
+    overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    rng = random.Random(seed)
+
+    for i in range(count):
+        x = rng.randint(20, w - 20)
+        y = rng.randint(20, h - 20)
+        phase = (frame / total + i * 0.13) % 1.0
+        alpha = int(180 * math.sin(math.pi * phase) ** 2)
+        if alpha < 20:
+            continue
+        r = rng.randint(2, 5)
+        color = GOLD if i % 3 else MINT
+        draw.ellipse((x - r, y - r, x + r, y + r), fill=(*color, alpha))
+        if alpha > 100:
+            draw.line((x - r * 2, y, x + r * 2, y), fill=(*WHITE, alpha // 2), width=1)
+            draw.line((x, y - r * 2, x, y + r * 2), fill=(*WHITE, alpha // 2), width=1)
+
+    return overlay
 
 
-def draw_fox_icon(draw: ImageDraw.ImageDraw, cx: int, cy: int, scale: float = 1.0) -> None:
-    s = scale
-    # Ears
-    draw.polygon(
-        [(cx - 34 * s, cy - 30 * s), (cx - 18 * s, cy - 62 * s), (cx - 2 * s, cy - 28 * s)],
-        fill=ORANGE,
-    )
-    draw.polygon(
-        [(cx + 2 * s, cy - 28 * s), (cx + 18 * s, cy - 62 * s), (cx + 34 * s, cy - 30 * s)],
-        fill=ORANGE,
-    )
-    # Head
-    draw.ellipse((cx - 42 * s, cy - 34 * s, cx + 42 * s, cy + 38 * s), fill=ORANGE)
-    draw.ellipse((cx - 30 * s, cy - 10 * s, cx + 30 * s, cy + 34 * s), fill=(255, 220, 185))
-    # Eyes
-    draw.ellipse((cx - 22 * s, cy - 8 * s, cx - 8 * s, cy + 6 * s), fill=WHITE)
-    draw.ellipse((cx + 8 * s, cy - 8 * s, cx + 22 * s, cy + 6 * s), fill=WHITE)
-    draw.ellipse((cx - 16 * s, cy - 2 * s, cx - 10 * s, cy + 4 * s), fill=(30, 30, 40))
-    draw.ellipse((cx + 10 * s, cy - 2 * s, cx + 16 * s, cy + 4 * s), fill=(30, 30, 40))
-    # Nose
-    draw.ellipse((cx - 6 * s, cy + 8 * s, cx + 6 * s, cy + 18 * s), fill=(50, 35, 30))
+def shimmer_overlay(size: tuple[int, int], frame: int, total: int) -> Image.Image:
+    w, h = size
+    overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    sweep = (frame / total) * (w + 200) - 100
+    for offset in range(-40, 41, 8):
+        x = sweep + offset
+        alpha = max(0, 28 - abs(offset) // 2)
+        draw.line((x, 0, x - 80, h), fill=(255, 255, 255, alpha), width=3)
+    return overlay
 
 
-def draw_coin(draw: ImageDraw.ImageDraw, x: int, y: int, r: int, label: str = "$") -> None:
-    draw.ellipse((x - r, y - r, x + r, y + r), fill=GOLD, outline=(220, 170, 40), width=2)
-    font = load_font(max(12, r), bold=True)
-    bbox = draw.textbbox((0, 0), label, font=font)
-    tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-    draw.text((x - tw // 2, y - th // 2 - 1), label, fill=(120, 70, 10), font=font)
+def glow_pulse(img: Image.Image, strength: float) -> Image.Image:
+  boosted = ImageEnhance.Brightness(img).enhance(1.0 + 0.06 * strength)
+  return ImageEnhance.Contrast(boosted).enhance(1.0 + 0.04 * strength)
 
 
-def centered_text(draw: ImageDraw.ImageDraw, y: int, text: str, font, fill, width: int) -> None:
-    bbox = draw.textbbox((0, 0), text, font=font)
-    tw = bbox[2] - bbox[0]
-    draw.text(((width - tw) // 2, y), text, fill=fill, font=font)
+def animate_banner(
+    banner_name: str,
+    output_name: str,
+    *,
+    zoom_range: tuple[float, float] = (1.0, 1.08),
+    pan_amp: tuple[float, float] = (0.06, 0.04),
+    sparkle_count: int = 14,
+    shimmer: bool = True,
+    seed: int = 42,
+) -> None:
+    banner_path = BANNERS / banner_name
+    if not banner_path.exists():
+        raise FileNotFoundError(banner_path)
+
+    base = cover_crop(Image.open(banner_path).convert("RGB"), OUTPUT_SIZE)
+    frames: list[Image.Image] = []
+
+    z0, z1 = zoom_range
+    px, py = pan_amp
+
+    for i in range(FRAMES):
+        t = i / FRAMES
+        wave = 0.5 - 0.5 * math.cos(2 * math.pi * t)
+        scale = z0 + (z1 - z0) * wave
+        pan_x = math.sin(2 * math.pi * t) * px
+        pan_y = math.cos(2 * math.pi * t) * py
+
+        frame = zoom_pan_frame(base, OUTPUT_SIZE, scale, pan_x, pan_y)
+        pulse = math.sin(2 * math.pi * t) ** 2
+        frame = glow_pulse(frame, pulse)
+
+        rgba = frame.convert("RGBA")
+        rgba = Image.alpha_composite(rgba, sparkle_overlay(OUTPUT_SIZE, i, FRAMES, seed, sparkle_count))
+        if shimmer and i % 3 == 0:
+            rgba = Image.alpha_composite(rgba, shimmer_overlay(OUTPUT_SIZE, i, FRAMES))
+
+        frames.append(rgba.convert("RGB"))
+
+    save_gif(frames, OUT / output_name)
 
 
-def save_gif(frames: list[Image.Image], path: Path, duration: int = 90) -> None:
+def save_gif_ffmpeg(frames: list[Image.Image], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    frames[0].save(
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        for i, frame in enumerate(frames):
+            frame.save(tmp_path / f"frame_{i:03d}.png")
+
+        palette = tmp_path / "palette.png"
+        part_a = (
+            f"fps={FPS},scale={OUTPUT_SIZE[0]}:{OUTPUT_SIZE[1]}:flags=lanczos,split[s0][s1];"
+            "[s0]palettegen=stats_mode=diff:max_colors=128:reserve_transparent=0[p];"
+            "[s1][p]paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle"
+        )
+        cmd = [
+            "ffmpeg", "-y",
+            "-framerate", str(FPS),
+            "-i", str(tmp_path / "frame_%03d.png"),
+            "-vf", part_a,
+            "-loop", "0",
+            str(path),
+        ]
+        subprocess.run(cmd, check=True, capture_output=True)
+
+    size_kb = path.stat().st_size // 1024
+    print(f"  {path.name} ({len(frames)} frames, {OUTPUT_SIZE[0]}x{OUTPUT_SIZE[1]}, {size_kb}KB)")
+
+
+def save_gif_pillow(frames: list[Image.Image], path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    sample = frames[:: max(1, len(frames) // 8)]
+    combined = Image.new("RGB", (OUTPUT_SIZE[0], OUTPUT_SIZE[1] * len(sample)))
+    for idx, frame in enumerate(sample):
+        combined.paste(frame, (0, idx * OUTPUT_SIZE[1]))
+    palette_img = combined.quantize(colors=192, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+
+    quantized_frames = [
+        frame.quantize(palette=palette_img, dither=Image.Dither.FLOYDSTEINBERG).convert("RGB")
+        for frame in frames
+    ]
+    quantized_frames[0].save(
         path,
         save_all=True,
-        append_images=frames[1:],
-        duration=duration,
+        append_images=quantized_frames[1:],
+        duration=FRAME_MS,
         loop=0,
         optimize=True,
         disposal=2,
     )
 
 
-def make_task_center_gif() -> None:
-    w, h = 480, 270
-    total = 24
-    frames = []
-    title_font = load_font(34, bold=True)
-    sub_font = load_font(18)
-    badge_font = load_font(16, bold=True)
-
-    for i in range(total):
-        img = gradient_bg((w, h), i, total)
-        draw = ImageDraw.Draw(img)
-        bounce = math.sin(2 * math.pi * i / total) * 6
-        draw_fox_icon(draw, 95, int(128 + bounce), 0.95)
-
-        centered_text(draw, 34, "TASK CENTER", title_font, WHITE, w)
-        centered_text(draw, 78, "21 Tasks Available", sub_font, MINT, w)
-        centered_text(draw, 104, "Earn USDT + FG", sub_font, GOLD, w)
-
-        pulse = 0.85 + 0.15 * math.sin(2 * math.pi * i / total)
-        bw, bh = int(170 * pulse), 42
-        bx, by = w - bw - 24, 190
-        draw.rounded_rectangle((bx, by, bx + bw, by + bh), radius=12, fill=ORANGE)
-        centered_text(draw, by + 10, "OPEN TASKS", badge_font, WHITE, w)
-
-        for j, (cx, cy) in enumerate([(300, 58), (360, 92), (410, 140)]):
-            phase = i / total + j * 0.2
-            oy = int(math.sin(2 * math.pi * phase) * 8)
-            draw_coin(draw, cx, cy + oy, 16, "FG")
-
-        frames.append(img)
-    save_gif(frames, OUT / "task-center-live.gif")
-
-
-def make_must_do_gif() -> None:
-    w, h = 480, 270
-    total = 20
-    frames = []
-    title_font = load_font(30, bold=True)
-    sub_font = load_font(17)
-    plat_font = load_font(14, bold=True)
-    platforms = ["X", "TT", "IG", "YT", "FB"]
-
-    for i in range(total):
-        img = gradient_bg((w, h), i, total)
-        draw = ImageDraw.Draw(img)
-        draw_fox_icon(draw, 88, 122, 0.85)
-        centered_text(draw, 24, "MUST DO", title_font, GOLD, w)
-        centered_text(draw, 58, "Link Your Accounts", sub_font, WHITE, w)
-        centered_text(draw, 84, "+10 FG  (+$0.10)", sub_font, MINT, w)
-
-        start_x = 190
-        for j, p in enumerate(platforms):
-            flash = (i + j * 2) % 10 < 5
-            color = ORANGE if flash else (255, 170, 100)
-            x = start_x + j * 52
-            draw.rounded_rectangle((x, 168, x + 44, 206), radius=8, fill=color)
-            bbox = draw.textbbox((0, 0), p, font=plat_font)
-            tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-            draw.text((x + (44 - tw) // 2, 178), p, fill=WHITE, font=plat_font)
-
-        blink = i % 16 < 8
-        if blink:
-            centered_text(draw, 224, "Unlock all tasks now", sub_font, GOLD, w)
-
-        frames.append(img)
-    save_gif(frames, OUT / "must-do-link-accounts.gif", duration=110)
-
-
-def make_high_value_gif() -> None:
-    w, h = 480, 270
-    total = 22
-    frames = []
-    title_font = load_font(40, bold=True)
-    sub_font = load_font(18)
-    note_font = load_font(15)
-
-    for i in range(total):
-        img = gradient_bg((w, h), i, total)
-        draw = ImageDraw.Draw(img)
-        shake = math.sin(2 * math.pi * i / total) * 3
-        draw_fox_icon(draw, 400, int(118 + shake), 0.8)
-
-        glow = int(20 + 15 * math.sin(2 * math.pi * i / total))
-        centered_text(draw, 36, "$20 TASK", title_font, (255, 210 + glow // 3, 90), w)
-        centered_text(draw, 88, "Reward: +110 FG", sub_font, WHITE, w)
-        centered_text(draw, 114, "Paid in 2 parts: $11 + $9", note_font, MINT, w)
-
-        for j in range(5):
-            t = (i / total + j * 0.15) % 1.0
-            cx = int(40 + t * 300)
-            cy = int(170 + math.sin(t * 6.28) * 18)
-            draw_coin(draw, cx, cy, 14, "$")
-
-        draw.rounded_rectangle((24, 196, 220, 238), radius=10, fill=(40, 55, 90))
-        draw.text((36, 206), "Task #11630", fill=GOLD, font=sub_font)
-
-        frames.append(img)
-    save_gif(frames, OUT / "high-value-20-task.gif", duration=95)
-
-
-def make_drip_gif() -> None:
-    w, h = 480, 270
-    total = 24
-    frames = []
-    title_font = load_font(28, bold=True)
-    sub_font = load_font(18)
-
-    for i in range(total):
-        img = gradient_bg((w, h), i, total)
-        draw = ImageDraw.Draw(img)
-        draw_fox_icon(draw, 110, 120, 0.9)
-        centered_text(draw, 28, "DRIP TASKS", title_font, MINT, w)
-        centered_text(draw, 62, "3 releasing soon", sub_font, WHITE, w)
-
-        # Hourglass
-        hx, hy = 330, 118
-        draw.polygon([(hx, hy - 34), (hx + 56, hy - 34), (hx + 28, hy)], fill=(90, 110, 150))
-        draw.polygon([(hx, hy + 34), (hx + 56, hy + 34), (hx + 28, hy)], fill=(90, 110, 150))
-        fill_h = int(18 + 10 * math.sin(2 * math.pi * i / total))
-        draw.rectangle((hx + 22, hy, hx + 34, hy + fill_h), fill=MINT)
-
-        for j in range(3):
-            t = (i / total + j * 0.33) % 1.0
-            drop_y = int(150 + t * 70)
-            alpha = int(255 * (1 - t))
-            color = (lerp(MINT[0], BG_BOTTOM[0], t), lerp(MINT[1], BG_BOTTOM[1], t), lerp(MINT[2], BG_BOTTOM[2], t))
-            draw.ellipse((300 + j * 28, drop_y, 312 + j * 28, drop_y + 12), fill=color)
-
-        centered_text(draw, 220, "Stay ready — limited slots", sub_font, GOLD, w)
-        frames.append(img)
-    save_gif(frames, OUT / "drip-tasks-soon.gif")
-
-
-def make_new_task_alert_gif() -> None:
-    w, h = 480, 270
-    total = 16
-    frames = []
-    title_font = load_font(30, bold=True)
-    sub_font = load_font(17)
-
-    for i in range(total):
-        img = gradient_bg((w, h), i, total)
-        draw = ImageDraw.Draw(img)
-        pulse = 0.9 + 0.1 * math.sin(2 * math.pi * i / total)
-        r = int(34 * pulse)
-        draw.ellipse((w // 2 - r, 24, w // 2 + r, 24 + 2 * r), fill=PINK)
-        centered_text(draw, 34, "!", load_font(28, bold=True), WHITE, w)
-
-        draw_fox_icon(draw, w // 2, 132, 1.0)
-        centered_text(draw, 196, "NEW TASK ALERT", title_font, WHITE, w)
-        centered_text(draw, 228, "Tap Tasks to claim rewards", sub_font, GOLD, w)
-        frames.append(img)
-    save_gif(frames, OUT / "new-task-alert.gif", duration=100)
-
-
-def make_social_follow_gif() -> None:
-    w, h = 480, 270
-    total = 20
-    frames = []
-    title_font = load_font(30, bold=True)
-    sub_font = load_font(16)
-    tags = ["Follow X", "Follow TikTok", "Subscribe YT", "Share FB"]
-
-    for i in range(total):
-        img = gradient_bg((w, h), i, total)
-        draw = ImageDraw.Draw(img)
-        draw_fox_icon(draw, 92, 122, 0.85)
-        centered_text(draw, 24, "FOLLOW & EARN", title_font, ORANGE, w)
-        idx = i % len(tags)
-        centered_text(draw, 58, tags[idx], sub_font, WHITE, w)
-        centered_text(draw, 82, "Up to +$0.044 per task", sub_font, MINT, w)
-
-        for j in range(4):
-            angle = 2 * math.pi * (j / 4 + i / total)
-            cx = 330 + int(math.cos(angle) * 58)
-            cy = 130 + int(math.sin(angle) * 38)
-            draw_coin(draw, cx, cy, 15, "FG")
-
-        frames.append(img)
-    save_gif(frames, OUT / "social-follow-earn.gif")
+def save_gif(frames: list[Image.Image], path: Path) -> None:
+    if shutil.which("ffmpeg"):
+        try:
+            save_gif_ffmpeg(frames, path)
+            return
+        except subprocess.CalledProcessError:
+            pass
+    save_gif_pillow(frames, path)
+    size_kb = path.stat().st_size // 1024
+    print(f"  {path.name} ({len(frames)} frames, {OUTPUT_SIZE[0]}x{OUTPUT_SIZE[1]}, {size_kb}KB)")
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    make_task_center_gif()
-    make_must_do_gif()
-    make_high_value_gif()
-    make_drip_gif()
-    make_new_task_alert_gif()
-    make_social_follow_gif()
-    print(f"Generated GIFs in {OUT}")
+    print("Generating banner-based GIFs...")
+
+    animate_banner("task-center.png", "task-center-live.gif", seed=11)
+    animate_banner("must-do-link-accounts.png", "must-do-link-accounts.gif", zoom_range=(1.0, 1.07), seed=22)
+    animate_banner("high-value-20-task.png", "high-value-20-task.gif", zoom_range=(1.02, 1.10), sparkle_count=18, seed=33)
+    animate_banner("drip-tasks-soon.png", "drip-tasks-soon.gif", pan_amp=(0.04, 0.06), seed=44)
+    animate_banner("social-follow-earn.png", "social-follow-earn.gif", seed=55)
+    animate_banner("daily-digest.png", "new-task-alert.gif", zoom_range=(1.0, 1.09), sparkle_count=16, shimmer=True, seed=66)
+    animate_banner("download-register.png", "download-register.gif", seed=77)
+
+    print(f"Done → {OUT}")
 
 
 if __name__ == "__main__":
