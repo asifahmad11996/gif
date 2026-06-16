@@ -24,7 +24,10 @@ foxigrowbot/
 | `drip-tasks-soon.png` | Drip task teaser (3 releasing soon) |
 | `daily-digest.png` | Top tasks roundup, idle user nudge |
 | `download-register.png` | Download & Register task (#12209) |
-| `social-follow-earn.png` | Follow/subscribe/share batch push |
+| `project-activities-task-system.png` | Project activities overview (16:9) |
+| `project-activities-task-system-vertical.png` | Same — vertical for Stories |
+| `private-tasks-task-master.png` | Private tasks & Task Master (16:9) |
+| `private-tasks-task-master-vertical.png` | Same — vertical for Stories |
 
 ## GIFs
 

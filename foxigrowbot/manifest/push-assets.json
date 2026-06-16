@@ -182,6 +182,42 @@
         { "text": "Open FoxiGrow Bot", "url": "https://t.me/FoxiGrowbot" },
         { "text": "Join Community", "url": "https://t.me/FoxiGrow" }
       ]
+    },
+    {
+      "id": "project_activities_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "banner": "banners/project-activities-task-system-vertical.png",
+      "caption_file": "posts/project-activities-task-system.txt",
+      "caption": "📢 FoxiGrow Project Activities & Task System — Regular Bot Activity + Community Activity. Global Tasks for everyone. Private Tasks for active members. 🦊",
+      "buttons": [
+        { "text": "Open Bot", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "Join Group", "url": "https://t.me/FoxiGrow" }
+      ]
+    },
+    {
+      "id": "private_tasks_task_master",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "banner": "banners/private-tasks-task-master.png",
+      "gif": "gifs/private-tasks-task-master.gif",
+      "caption_file": "posts/private-tasks-task-master.txt",
+      "caption": "🔒 High-Value Private Tasks & Task Master Role\n\nWant exclusive private events on FoxiGrow?\n\n✅ Stay active in our Telegram group\n✅ Help users and share useful info\n✅ Solve problems and contribute ideas\n\nSelected members get invited to High-Value Private Tasks and may become Task Masters.\n\n⚠️ Random messages don't count — real help does.\n\n🌍 Global Tasks = everyone in the bot\n🔒 Private Tasks = active community members\n\nStay helpful. Stay active. Get invited. 🦊",
+      "buttons": [
+        { "text": "Join Community", "url": "https://t.me/FoxiGrow" },
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "private_tasks_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "banner": "banners/private-tasks-task-master-vertical.png",
+      "caption_file": "posts/private-tasks-task-master.txt",
+      "caption": "🔒 Private Tasks & Task Master — help the community, get invited to exclusive high-value events. 🦊",
+      "buttons": [
+        { "text": "Join Community", "url": "https://t.me/FoxiGrow" }
+      ]
     }
   ]
 }
