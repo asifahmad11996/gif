@@ -169,6 +169,19 @@
         { "text": "Watch Tutorial", "url": "https://t.me/FoxiGrow" }
       ],
       "attach_tutorial_video": true
+    },
+    {
+      "id": "project_activities_task_system",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "banner": "banners/project-activities-task-system.png",
+      "gif": "gifs/project-activities-task-system.gif",
+      "caption_file": "posts/project-activities-task-system.txt",
+      "caption": "📢 Important Notice – FoxiGrow Project Activities & Task System\n\nDear Members,\n\nOur project is based on two main types of activities and two types of tasks.\n\n✅ 1. Regular Bot Activity\n- Stay active in the bot.\n- Complete tasks regularly.\n- Earn as a normal user by participating in available opportunities.\n\n✅ 2. Community Activity\n- Stay active in our official Telegram group.\n- Help new and existing users.\n- Share useful information and assist in solving problems.\n- Become eligible for the Task Master role by making meaningful contributions.\n\n📌 Two Types of Tasks\n\n🌍 Global Tasks — available to all eligible users through the bot.\n\n🔒 High-Value Private Tasks — reserved for active community members, selected from the Telegram group.\n\n⚠️ Important: Simply sending unnecessary messages to increase activity count has no value. Real community activity means helping others, sharing useful information, and contributing to problem-solving.\n\nThank you for being a valuable part of the FoxiGrow community. 🦊",
+      "buttons": [
+        { "text": "Open FoxiGrow Bot", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "Join Community", "url": "https://t.me/FoxiGrow" }
+      ]
     }
   ]
 }
