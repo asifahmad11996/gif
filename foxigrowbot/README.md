@@ -28,6 +28,8 @@ foxigrowbot/
 | `project-activities-task-system-vertical.png` | Same — vertical for Stories |
 | `private-tasks-task-master.png` | Private tasks & Task Master (16:9) |
 | `private-tasks-task-master-vertical.png` | Same — vertical for Stories |
+| `action-persistence-income.png` | Action + Persistence promo (16:9) |
+| `action-persistence-income-vertical.png` | Same — vertical for Stories |
 
 ## GIFs
 

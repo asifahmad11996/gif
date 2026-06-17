@@ -216,6 +216,7 @@ def main() -> None:
     animate_banner("youtube-watch-update.png", "youtube-watch-update.gif", zoom_range=(1.0, 1.07), sparkle_count=12, shimmer=False, seed=88)
     animate_banner("project-activities-task-system.png", "project-activities-task-system.gif", zoom_range=(1.0, 1.06), sparkle_count=10, shimmer=False, seed=99)
     animate_banner("private-tasks-task-master.png", "private-tasks-task-master.gif", zoom_range=(1.0, 1.08), sparkle_count=16, shimmer=True, seed=101)
+    animate_banner("action-persistence-income.png", "action-persistence-income.gif", zoom_range=(1.0, 1.08), sparkle_count=18, shimmer=True, seed=120)
 
     print(f"Done → {OUT}")
 

@@ -218,6 +218,37 @@
       "buttons": [
         { "text": "Join Community", "url": "https://t.me/FoxiGrow" }
       ]
+    },
+    {
+      "id": "action_persistence_income",
+      "trigger": "promo",
+      "type": "channel_post",
+      "banner": "banners/action-persistence-income.png",
+      "gif": "gifs/action-persistence-income.gif",
+      "caption_file": "posts/action-persistence-income.txt",
+      "caption": "💪💰 Action + Persistence = Consistent Income\n\nYou don't need to grind hard every day.\n\n✅ Small daily tasks on FoxiGrow\n✅ Earn real USDT in your spare time\n✅ Invite friends → 10–20% ongoing commission\n\nDo tasks yourself + share the opportunity = long-term passive income 🔁\n\nFoxiGrow has already proven it works 🦊\n\nStart today. Stay consistent. Get paid. 🚀",
+      "buttons": [
+        { "text": "Start Earning", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "Open Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "action_persistence_twitter",
+      "trigger": "promo",
+      "type": "twitter_post",
+      "banner": "banners/action-persistence-income.png",
+      "caption": "Action + Persistence = Consistent Income 💪💰\n\n✅ Small daily tasks on FoxiGrow\n✅ Earn real USDT\n✅ 10–20% referral commission\n\nDo tasks + share = passive income 🔁\n\nStart today 🦊🚀\nt.me/FoxiGrowbot\n\n#USDT #EarnOnline #FoxiGrow"
+    },
+    {
+      "id": "action_persistence_stories",
+      "trigger": "promo",
+      "type": "stories_post",
+      "banner": "banners/action-persistence-income-vertical.png",
+      "caption_file": "posts/action-persistence-income.txt",
+      "caption": "💪 Action + Persistence = Income 💰\nSmall tasks. Real USDT. 10–20% commission. Start on FoxiGrow 🦊🚀",
+      "buttons": [
+        { "text": "Start Now", "url": "https://t.me/FoxiGrowbot" }
+      ]
     }
   ]
 }
