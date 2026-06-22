@@ -30,6 +30,8 @@ foxigrowbot/
 | `private-tasks-task-master-vertical.png` | Same — vertical for Stories |
 | `action-persistence-income.png` | Action + Persistence promo (16:9) |
 | `action-persistence-income-vertical.png` | Same — vertical for Stories |
+| `foxigroworderbot-launch.png` | FoxiGrowOrderBot launch (16:9) |
+| `foxigroworderbot-launch-vertical.png` | Same — vertical for Stories |
 
 ## GIFs
 

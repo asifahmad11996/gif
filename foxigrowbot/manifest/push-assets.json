@@ -249,6 +249,40 @@
       "buttons": [
         { "text": "Start Now", "url": "https://t.me/FoxiGrowbot" }
       ]
+    },
+    {
+      "id": "foxigroworderbot_launch",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/foxigroworderbot-launch.png",
+      "gif": "gifs/foxigroworderbot-launch.gif",
+      "caption_file": "posts/foxigroworderbot-launch.txt",
+      "caption": "🛒 Introducing FoxiGrowOrderBot — Official Self-Order System\n\nNeed real social media growth for your brand or project?\n\nFoxiGrowOrderBot lets you order likes, views, subscribers, comments & more — from real users inside Telegram. 🦊\n\n✅ Real users, not bots\n✅ Easy self-ordering\n✅ TikTok, Instagram, YouTube, X & more\n✅ Official FoxiGrow system\n\n🔄 Two sides of FoxiGrow:\n🦊 @FoxiGrowBot — earn by doing tasks\n🛒 @FoxiGrowOrderBot — order growth for your brand\n\n👉 t.me/FoxiGrowOrderBot",
+      "buttons": [
+        { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" },
+        { "text": "Earn with FoxiGrow", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "foxigroworderbot_twitter",
+      "trigger": "announcement",
+      "type": "twitter_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/foxigroworderbot-launch.png",
+      "caption": "🛒 FoxiGrowOrderBot — Official Self-Order System\n\nOrder likes, views, followers & comments from REAL users 📈\n\n✅ TikTok • IG • YouTube • X\n✅ Easy ordering in Telegram\n✅ Powered by FoxiGrow community\n\n👉 t.me/FoxiGrowOrderBot\n\n#FoxiGrow #SocialGrowth #Telegram"
+    },
+    {
+      "id": "foxigroworderbot_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/foxigroworderbot-launch-vertical.png",
+      "caption_file": "posts/foxigroworderbot-launch.txt",
+      "caption": "🛒 Order social growth from real users\nLikes • Views • Followers • Comments\n@FoxiGrowOrderBot 🦊🚀",
+      "buttons": [
+        { "text": "Order Now", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
     }
   ]
 }
