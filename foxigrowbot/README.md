@@ -32,6 +32,7 @@ foxigrowbot/
 | `action-persistence-income-vertical.png` | Same — vertical for Stories |
 | `foxigroworderbot-launch.png` | FoxiGrowOrderBot launch (16:9) |
 | `foxigroworderbot-launch-vertical.png` | Same — vertical for Stories |
+| `foxigroworderbot-api-partners.png` | Partner API launch (16:9) |
 
 ## GIFs
 

@@ -218,6 +218,7 @@ def main() -> None:
     animate_banner("private-tasks-task-master.png", "private-tasks-task-master.gif", zoom_range=(1.0, 1.08), sparkle_count=16, shimmer=True, seed=101)
     animate_banner("action-persistence-income.png", "action-persistence-income.gif", zoom_range=(1.0, 1.08), sparkle_count=18, shimmer=True, seed=120)
     animate_banner("foxigroworderbot-launch.png", "foxigroworderbot-launch.gif", zoom_range=(1.0, 1.07), sparkle_count=14, shimmer=True, seed=130)
+    animate_banner("foxigroworderbot-api-partners.png", "foxigroworderbot-api-partners.gif", zoom_range=(1.0, 1.07), sparkle_count=12, shimmer=False, seed=140)
 
     print(f"Done → {OUT}")
 

@@ -18,18 +18,35 @@ FoxiGrowOrderBot is the official FoxiGrow ordering platform — built for creato
 🤝 Powered by the FoxiGrow community ecosystem
 🔒 Official FoxiGrow system — trusted and transparent
 
-💡 How it works
+🆕 NEW: Partner API Is Live
+We have launched an API that allows partners to:
+🔌 Integrate FoxiGrow services for resale
+📦 Place orders directly through your own system
+🔑 Generate your API Token in the Developer section
+📄 Access full API Documentation inside the bot
+
+Perfect for agencies, resellers, and developers who want to offer social growth services under their own brand — powered by FoxiGrow infrastructure. 🚀
+
+💡 How it works (Self-Order)
 1️⃣ Open @FoxiGrowOrderBot
 2️⃣ Choose your service & platform
 3️⃣ Place your order
 4️⃣ Get promotion from real engaged users
 
+🧑‍💻 How it works (Partners / API)
+1️⃣ Open @FoxiGrowOrderBot → Developer
+2️⃣ Copy your API Token
+3️⃣ Read the API Documentation
+4️⃣ Integrate & start reselling or placing orders directly
+
 🔄 Two sides of FoxiGrow
 🦊 @FoxiGrowBot — earn USDT by completing tasks
 🛒 @FoxiGrowOrderBot — order growth for your brand
+🔌 Partner API — integrate & resell our services
 
-Whether you're growing a channel, launching a project, or scaling your online presence — FoxiGrowOrderBot makes it simple. 🚀
+Whether you're growing a channel, launching a project, or building your own resale business — FoxiGrowOrderBot has you covered. 🚀
 
-👉 Start ordering now: t.me/FoxiGrowOrderBot
+👉 Start ordering: t.me/FoxiGrowOrderBot
+👉 Partner API: Open Developer section in @FoxiGrowOrderBot
 
-#FoxiGrow #FoxiGrowOrderBot #SocialGrowth #Telegram
+#FoxiGrow #FoxiGrowOrderBot #API #SocialGrowth #Telegram
