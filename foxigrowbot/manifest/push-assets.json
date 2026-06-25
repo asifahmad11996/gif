@@ -149,11 +149,74 @@
     {
       "id": "idle_user_nudge",
       "trigger": "user_idle_24h",
-      "banner": "banners/daily-digest.png",
-      "gif": "gifs/task-center-live.gif",
-      "caption": "🦊 We miss you! 21 tasks are still open on FoxiGrow. Quick wins: TikTok follow (+$0.03), Twitter follow (+$0.04).",
+      "banner": "banners/reengage-we-miss-you.png",
+      "gif": "gifs/reengage-we-miss-you.gif",
+      "caption": "🦊 We miss you! 21+ tasks are still open on FoxiGrow.\n\n💡 Active users are already earning ~$30/month — just a few quick tasks a day.\n\nYour next wins: TikTok follow (+$0.03), Twitter follow (+$0.04). Tap in before drip tasks fill up!",
       "buttons": [
         { "text": "Earn Now", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "reengage_3d_dormant",
+      "trigger": "user_idle_3d",
+      "banner": "banners/reengage-30-per-month.png",
+      "gif": "gifs/reengage-30-per-month.gif",
+      "caption": "💰 While you were away, FoxiGrow users kept earning.\n\nReal people on the platform are making ~$30/month from simple social tasks — no special skills, just spare time.\n\nToday's board is live: micro-tasks from +$0.02, fresh drip releases, and limited slots. Your accounts are still linked. One task = instant reward. 🚀",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
+        { "text": "View Top Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "reengage_7d_dormant",
+      "trigger": "user_idle_7d",
+      "banner": "banners/reengage-comeback-earn.png",
+      "gif": "gifs/reengage-comeback-earn.gif",
+      "caption": "👋 We miss you on FoxiGrow!\n\nYou signed up to earn — and users like you are already hitting ~$30/month by staying consistent. A few minutes a day is all it takes.\n\n🔥 What's waiting:\n• 21+ tasks available now\n• Follow & earn on X, TikTok, YouTube & Facebook\n• 10–20% referral commission on every friend you invite\n\nDon't let another week pass. Your balance is still there. 🦊",
+      "buttons": [
+        { "text": "Earn Now", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
+        { "text": "Invite Friends", "url": "https://t.me/FoxiGrowbot/app?startapp=invite" }
+      ]
+    },
+    {
+      "id": "reengage_14d_dormant",
+      "trigger": "user_idle_14d",
+      "banner": "banners/reengage-30-per-month.png",
+      "gif": "gifs/reengage-30-per-month.gif",
+      "caption": "🦊 Quick reminder: your FoxiGrow account is ready.\n\nThousands of users earn real USDT every day. Many reach ~$30/month without grinding — just small daily actions on follow, comment, and subscribe tasks.\n\n✅ No setup needed if your accounts are linked\n✅ Tasks take 1–3 minutes each\n✅ Withdraw once you hit $2 USDT\n\nCome back for one task today. See how fast it adds up. 💵",
+      "buttons": [
+        { "text": "Start Earning", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "reengage_onboarding",
+      "trigger": "onboarding_incomplete_3d",
+      "banner": "banners/reengage-complete-setup.png",
+      "gif": "gifs/reengage-complete-setup.gif",
+      "caption": "⚡ You're one step away from earning!\n\nUsers who finish setup are already making ~$30/month on FoxiGrow. Link your social accounts to unlock every task.\n\n🎁 Quick wins waiting:\n• Link Twitter, TikTok, Instagram, YouTube & Facebook\n• All 5 linked = +$0.10 instantly\n• Unlock 21+ earning tasks\n\nFinish setup today and grab your first reward. 🚀",
+      "buttons": [
+        { "text": "Complete Setup", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks_must_do" }
+      ]
+    },
+    {
+      "id": "reengage_lapsed_earner",
+      "trigger": "user_lapsed_earner",
+      "banner": "banners/reengage-comeback-earn.png",
+      "gif": "gifs/reengage-comeback-earn.gif",
+      "caption": "💪 You already proved FoxiGrow works.\n\nUsers who stay active are earning ~$30/month — and you've done it before. A short break is fine; the tasks didn't stop.\n\n📬 Fresh opportunities today:\n• Micro-tasks from +$0.02\n• Download & Register — +$0.15\n• Social follows — +$0.03 to +$0.044 each\n\nPick up where you left off. Your consistency pays off. 🦊📈",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "reengage_referral",
+      "trigger": "user_idle_referral",
+      "banner": "banners/reengage-30-per-month.png",
+      "gif": "gifs/reengage-30-per-month.gif",
+      "caption": "🔁 Earn while you sleep — literally.\n\nFoxiGrow users earning ~$30/month from tasks often earn more from referrals: 10–20% ongoing commission on every task their friends complete.\n\n✅ Do a few tasks yourself today\n✅ Share with friends who need spare-time income\n✅ Build long-term passive income on top of daily earnings\n\nSmall action today → income that keeps growing. 🚀",
+      "buttons": [
+        { "text": "Earn Now", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
+        { "text": "Invite Friends", "url": "https://t.me/FoxiGrowbot/app?startapp=invite" }
       ]
     },
     {

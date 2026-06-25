@@ -219,6 +219,10 @@ def main() -> None:
     animate_banner("action-persistence-income.png", "action-persistence-income.gif", zoom_range=(1.0, 1.08), sparkle_count=18, shimmer=True, seed=120)
     animate_banner("foxigroworderbot-launch.png", "foxigroworderbot-launch.gif", zoom_range=(1.0, 1.07), sparkle_count=14, shimmer=True, seed=130)
     animate_banner("foxigroworderbot-api-partners.png", "foxigroworderbot-api-partners.gif", zoom_range=(1.0, 1.07), sparkle_count=12, shimmer=False, seed=140)
+    animate_banner("reengage-we-miss-you.png", "reengage-we-miss-you.gif", zoom_range=(1.0, 1.08), sparkle_count=16, shimmer=True, seed=150)
+    animate_banner("reengage-30-per-month.png", "reengage-30-per-month.gif", zoom_range=(1.0, 1.09), sparkle_count=18, shimmer=True, seed=151)
+    animate_banner("reengage-comeback-earn.png", "reengage-comeback-earn.gif", zoom_range=(1.0, 1.08), sparkle_count=14, shimmer=True, seed=152)
+    animate_banner("reengage-complete-setup.png", "reengage-complete-setup.gif", zoom_range=(1.0, 1.07), sparkle_count=12, shimmer=False, seed=153)
 
     print(f"Done → {OUT}")
 

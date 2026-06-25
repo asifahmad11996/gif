@@ -33,6 +33,10 @@ foxigrowbot/
 | `foxigroworderbot-launch.png` | FoxiGrowOrderBot launch (16:9) |
 | `foxigroworderbot-launch-vertical.png` | Same — vertical for Stories |
 | `foxigroworderbot-api-partners.png` | Partner API launch (16:9) |
+| `reengage-we-miss-you.png` | 24h idle user — "We miss you" |
+| `reengage-30-per-month.png` | Social proof — ~$30/month earning angle |
+| `reengage-comeback-earn.png` | 7d+ dormant — comeback CTA |
+| `reengage-complete-setup.png` | Incomplete onboarding — link accounts |
 
 ## GIFs
 
@@ -45,6 +49,10 @@ foxigrowbot/
 | `new-task-alert.gif` | Generic new task / low-slots alert |
 | `download-register.gif` | Download & Register task animation |
 | `social-follow-earn.gif` | Rotating social follow highlights |
+| `reengage-we-miss-you.gif` | 24h idle user nudge animation |
+| `reengage-30-per-month.gif` | ~$30/month social proof pulse |
+| `reengage-comeback-earn.gif` | Comeback & earn alert |
+| `reengage-complete-setup.gif` | Complete setup reminder |
 
 ## Bot integration
 
