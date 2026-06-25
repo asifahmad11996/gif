@@ -37,6 +37,7 @@ foxigrowbot/
 | `reengage-30-per-month.png` | Social proof — ~$30/month earning angle |
 | `reengage-comeback-earn.png` | 7d+ dormant — comeback CTA |
 | `reengage-complete-setup.png` | Incomplete onboarding — link accounts |
+| `reengage-earn-while-sleep.png` | Referral nudge — earn while you sleep |
 
 ## GIFs
 
@@ -53,6 +54,7 @@ foxigrowbot/
 | `reengage-30-per-month.gif` | ~$30/month social proof pulse |
 | `reengage-comeback-earn.gif` | Comeback & earn alert |
 | `reengage-complete-setup.gif` | Complete setup reminder |
+| `reengage-earn-while-sleep.gif` | Referral / passive income animation |
 
 ## Bot integration
 

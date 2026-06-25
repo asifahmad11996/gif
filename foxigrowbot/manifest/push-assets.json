@@ -211,9 +211,9 @@
     {
       "id": "reengage_referral",
       "trigger": "user_idle_referral",
-      "banner": "banners/reengage-30-per-month.png",
-      "gif": "gifs/reengage-30-per-month.gif",
-      "caption": "🔁 Earn while you sleep — literally.\n\nFoxiGrow users earning ~$30/month from tasks often earn more from referrals: 10–20% ongoing commission on every task their friends complete.\n\n✅ Do a few tasks yourself today\n✅ Share with friends who need spare-time income\n✅ Build long-term passive income on top of daily earnings\n\nSmall action today → income that keeps growing. 🚀",
+      "banner": "banners/reengage-earn-while-sleep.png",
+      "gif": "gifs/reengage-earn-while-sleep.gif",
+      "caption": "😴 Earn while you sleep — literally.\n\nFoxiGrow users earning ~$30/month from tasks often earn more from referrals: 10–20% ongoing commission on every task their friends complete.\n\n✅ Do a few tasks yourself today\n✅ Share with friends who need spare-time income\n✅ Build long-term passive income on top of daily earnings\n\nSmall action today → income that keeps growing. 🚀",
       "buttons": [
         { "text": "Earn Now", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
         { "text": "Invite Friends", "url": "https://t.me/FoxiGrowbot/app?startapp=invite" }

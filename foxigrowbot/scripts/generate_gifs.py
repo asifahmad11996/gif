@@ -223,6 +223,7 @@ def main() -> None:
     animate_banner("reengage-30-per-month.png", "reengage-30-per-month.gif", zoom_range=(1.0, 1.09), sparkle_count=18, shimmer=True, seed=151)
     animate_banner("reengage-comeback-earn.png", "reengage-comeback-earn.gif", zoom_range=(1.0, 1.08), sparkle_count=14, shimmer=True, seed=152)
     animate_banner("reengage-complete-setup.png", "reengage-complete-setup.gif", zoom_range=(1.0, 1.07), sparkle_count=12, shimmer=False, seed=153)
+    animate_banner("reengage-earn-while-sleep.png", "reengage-earn-while-sleep.gif", zoom_range=(1.0, 1.09), sparkle_count=18, shimmer=True, seed=154)
 
     print(f"Done → {OUT}")
 
