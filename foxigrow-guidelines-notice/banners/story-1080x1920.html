@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoxiGrow — Important Notice Story</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #111;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .banner {
+      width: 1080px;
+      height: 1920px;
+      background: linear-gradient(180deg, #0a0a0a 0%, #121212 45%, #0a0a0a 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 72px 56px 64px;
+    }
+    .accent-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 10px;
+      background: linear-gradient(90deg, #ff6b00, #ff9500, #ff6b00);
+    }
+    .glow {
+      position: absolute;
+      width: 900px; height: 900px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,0,0.15) 0%, transparent 65%);
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #555;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      margin-top: 48px;
+      align-self: center;
+      background: rgba(255,107,0,0.15);
+      border: 1px solid rgba(255,107,0,0.4);
+      color: #ff9500;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 999px;
+      position: relative;
+      z-index: 1;
+    }
+    .title {
+      margin-top: 40px;
+      font-size: 64px;
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      line-height: 1.1;
+      position: relative;
+      z-index: 1;
+    }
+    .title em {
+      font-style: normal;
+      color: #ff6b00;
+    }
+    .intro {
+      margin-top: 24px;
+      font-size: 28px;
+      color: #999;
+      text-align: center;
+      line-height: 1.5;
+      position: relative;
+      z-index: 1;
+    }
+    .blocks {
+      margin-top: 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+    .block {
+      background: rgba(255,255,255,0.04);
+      border-left: 4px solid #ff6b00;
+      border-radius: 0 16px 16px 0;
+      padding: 28px 32px;
+    }
+    .block.warn { border-left-color: #ff4444; }
+    .block h3 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #ff9500;
+      margin-bottom: 14px;
+    }
+    .block.warn h3 { color: #ff6666; }
+    .block ul { list-style: none; padding: 0; }
+    .block li {
+      font-size: 24px;
+      color: #bbb;
+      line-height: 1.5;
+      padding-left: 28px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .block li::before {
+      content: '•';
+      position: absolute;
+      left: 8px;
+      color: #ff6b00;
+    }
+    .cta {
+      margin-top: auto;
+      background: linear-gradient(135deg, #ff6b00, #ff9500);
+      color: #fff;
+      font-size: 32px;
+      font-weight: 800;
+      padding: 32px;
+      border-radius: 18px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .team {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #666;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .team span { color: #ff6b00; }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="accent-bar"></div>
+    <div class="glow"></div>
+
+    <div class="logo">FoxiGrow</div>
+    <div class="badge">📣 IMPORTANT NOTICE</div>
+
+    <h1 class="title">Important Notice<br>for All <em>FoxiGrow</em> Workers</h1>
+    <p class="intro">All submissions are manually reviewed. Follow these guidelines to reduce rejections and earn more.</p>
+
+    <div class="blocks">
+      <div class="block">
+        <h3>✅ Account Guidelines</h3>
+        <ul>
+          <li>Use connected accounts on supported platforms</li>
+          <li>Use genuine accounts matching your Telegram name</li>
+          <li>Keep profile pic, cover, bio & username</li>
+          <li>Maintain consistent identity everywhere</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>✅ Level Up Your Earnings</h3>
+        <ul>
+          <li>Read every task description carefully</li>
+          <li>Watch tutorial videos if provided</li>
+          <li>Submit clear, complete & accurate proof</li>
+        </ul>
+      </div>
+
+      <div class="block warn">
+        <h3>⚠️ Rejection Reasons</h3>
+        <ul>
+          <li>Unconnected accounts on linkable platforms</li>
+          <li>Account can't match Telegram identity</li>
+          <li>Incorrect or misleading proof</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cta">Work Smart · Follow the Rules · Earn More</div>
+    <div class="team">— <span>FoxiGrow</span> Team 🦊</div>
+  </div>
+</body>
+</html>
