@@ -14,6 +14,19 @@ foxigrowbot/
     └── generate_gifs.py   # Regenerate GIFs locally
 ```
 
+## Banner sizes (Telegram Mini App)
+
+| Size | Folder | Source | Use |
+|------|--------|--------|-----|
+| **1536×1024** | `banners/*.png` | AI master artwork | Best quality — channel, announcements |
+| **1200×400** | `banners/1200x400/` | Cropped from 1536 heroes | Wide promo blocks |
+| **320×50** | `banners/320x50/` | Cropped from 1536 heroes | Mini app top banner strip |
+
+Regenerate smaller sizes from masters:
+```bash
+cd foxigrowbot && python3 scripts/resize_banners.py
+```
+
 ## Banners
 
 | File | Use case |
