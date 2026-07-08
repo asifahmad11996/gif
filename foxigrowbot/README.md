@@ -16,13 +16,15 @@ foxigrowbot/
 
 ## Banner sizes (Telegram Mini App)
 
-| Size | Folder | Source | Use |
-|------|--------|--------|-----|
-| **1536×1024** | `banners/*.png` | AI master artwork | Best quality — channel, announcements |
-| **1200×400** | `banners/1200x400/` | Cropped from 1536 heroes | Wide promo blocks |
-| **320×50** | `banners/320x50/` | Cropped from 1536 heroes | Mini app top banner strip |
+All mini-app sizes are generated from **FoxiGrow theme masters** (navy + orange glow + fox mascot + network graphic).
 
-Regenerate smaller sizes from masters:
+| Size | Folder | Master source |
+|------|--------|---------------|
+| **1536×1024** | `banners/masters/` | FoxiGrow theme artwork (edit these) |
+| **1200×400** | `banners/1200x400/` | Resized from `*-1200x400.png` masters |
+| **320×50** | `banners/320x50/` | Resized from `*-wide.png` masters |
+
+Regenerate after updating masters:
 ```bash
 cd foxigrowbot && python3 scripts/resize_banners.py
 ```
