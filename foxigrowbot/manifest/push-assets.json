@@ -297,6 +297,18 @@
         { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" },
         { "text": "View API Docs", "url": "https://t.me/FoxiGrowOrderBot" }
       ]
+    },
+    {
+      "id": "earn_telegram_easy_start",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/earn-telegram-easy-start.png",
+      "caption_file": "posts/earn-telegram-easy-start.txt",
+      "caption": "🔥 The easiest way to start earning on Telegram is here.\n\nNo deposit. No crypto wallet. No complicated setup.\nJust open @FoxiGrowbot and start earning.\n\n💸 580,000+ users trust FoxiGrow\n💰 Over $112,000 paid to our community\n⚡️ Start in under a minute\n🎯 Multiple ways to earn\n🤝 Invite friends — recurring referral rewards\n\n🚀 Join today: t.me/FoxiGrowbot?startapp",
+      "buttons": [
+        { "text": "Join FoxiGrow", "url": "https://t.me/FoxiGrowbot?startapp" }
+      ]
     }
   ]
 }
