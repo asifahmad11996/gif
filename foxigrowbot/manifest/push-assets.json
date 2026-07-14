@@ -309,6 +309,18 @@
       "buttons": [
         { "text": "Join FoxiGrow", "url": "https://t.me/FoxiGrowbot?startapp" }
       ]
+    },
+    {
+      "id": "boost_x_twitter",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/boost-x-twitter.png",
+      "caption_file": "posts/boost-x-twitter.txt",
+      "caption": "🚀 Boost your project on X (Twitter)!\n\nGet real followers, likes, reposts, and comments to grow your reach and engagement.\n\n⚡ Fast delivery • Real users\n\n👉 Order now: @FoxiGrowOrderBot",
+      "buttons": [
+        { "text": "Order Now", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
     }
   ]
 }
