@@ -48,6 +48,10 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `foxigroworderbot-launch.png` | FoxiGrowOrderBot launch (16:9) |
 | `foxigroworderbot-launch-vertical.png` | Same — vertical for Stories |
 | `foxigroworderbot-api-partners.png` | Partner API launch (16:9) |
+| `spare-time-earn-usdt.png` | Spare time → earn USDT promo (16:9) |
+| `spare-time-earn-usdt-vertical.png` | Same — vertical for Stories |
+| `invite-friends-grow.png` | Invite friends / community growth promo (16:9) |
+| `invite-friends-grow-vertical.png` | Same — vertical for Stories |
 
 ## GIFs
 
@@ -60,6 +64,8 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `new-task-alert.gif` | Generic new task / low-slots alert |
 | `download-register.gif` | Download & Register task animation |
 | `social-follow-earn.gif` | Rotating social follow highlights |
+| `spare-time-earn-usdt.gif` | Spare time nudge with coin sparkle |
+| `invite-friends-grow.gif` | Community growth / referral invite pulse |
 
 ## Bot integration
 

@@ -321,6 +321,58 @@
       "buttons": [
         { "text": "Order Now", "url": "https://t.me/FoxiGrowOrderBot" }
       ]
+    },
+    {
+      "id": "spare_time_earn_usdt",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/spare-time-earn-usdt.png",
+      "gif": "gifs/spare-time-earn-usdt.gif",
+      "caption_file": "posts/spare-time-earn-usdt.txt",
+      "caption": "⏰ Don't Let Your Spare Time Go to Waste!\n\nGot a few free minutes? There may be tasks waiting for you. 👀\n\n💰 Complete tasks → Earn USDT\n🎯 Check new opportunities regularly\n🚀 Keep your activity growing\n\n🦊 Open @FoxiGrowbot and start now!",
+      "buttons": [
+        { "text": "Open FoxiGrow", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "View Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "spare_time_stories",
+      "trigger": "promo",
+      "type": "stories_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/spare-time-earn-usdt-vertical.png",
+      "caption_file": "posts/spare-time-earn-usdt.txt",
+      "caption": "⏰ Don't let spare time go to waste! Complete tasks → Earn USDT. Open @FoxiGrowbot 🦊🚀",
+      "buttons": [
+        { "text": "Start Now", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "invite_friends_grow",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/invite-friends-grow.png",
+      "gif": "gifs/invite-friends-grow.gif",
+      "caption_file": "posts/invite-friends-grow.txt",
+      "caption": "🦊 Why Earn Alone?\n\nKnow someone looking for simple online tasks?\n\nInvite them to FoxiGrow and let them discover the available opportunities too. 🌎\n\n👥 You grow → Your friends grow → Our community grows\n\n👉 Start here: @FoxiGrowbot 🚀",
+      "buttons": [
+        { "text": "Invite Friends", "url": "https://t.me/FoxiGrowbot/app?startapp=referral" },
+        { "text": "Open FoxiGrow", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "invite_friends_stories",
+      "trigger": "promo",
+      "type": "stories_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/invite-friends-grow-vertical.png",
+      "caption_file": "posts/invite-friends-grow.txt",
+      "caption": "🦊 Why earn alone? Invite friends → You grow, they grow, community grows. @FoxiGrowbot 🚀",
+      "buttons": [
+        { "text": "Start Here", "url": "https://t.me/FoxiGrowbot" }
+      ]
     }
   ]
 }
