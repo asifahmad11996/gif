@@ -52,6 +52,7 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `spare-time-earn-usdt-vertical.png` | Same — vertical for Stories |
 | `invite-friends-grow.png` | Invite friends / community growth promo (16:9) |
 | `invite-friends-grow-vertical.png` | Same — vertical for Stories |
+| `foxigrow-social-content-paid.png` | Social content tasks — earn USDT (1:1 square) |
 
 ## GIFs
 
@@ -66,6 +67,7 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `social-follow-earn.gif` | Rotating social follow highlights |
 | `spare-time-earn-usdt.gif` | Spare time nudge with coin sparkle |
 | `invite-friends-grow.gif` | Community growth / referral invite pulse |
+| `foxigrow-social-content-paid.gif` | Social content earn USDT feature promo |
 
 ## Bot integration
 

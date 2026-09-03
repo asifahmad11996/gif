@@ -373,6 +373,20 @@
       "buttons": [
         { "text": "Start Here", "url": "https://t.me/FoxiGrowbot" }
       ]
+    },
+    {
+      "id": "social_content_earn_usdt",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/foxigrow-social-content-paid.png",
+      "gif": "gifs/foxigrow-social-content-paid.gif",
+      "caption_file": "posts/social-content-earn-usdt.txt",
+      "caption": "🆕 New Feature — Get paid for content about FoxiGrow on social media!\n\nCreate videos on TikTok, YouTube & Instagram Reels and earn real USDT per task. 🎬💰\n\n✅ Simple content tasks\n✅ Earn USDT per video / per task\n\n🦊 Open @FoxiGrowbot and start now!",
+      "buttons": [
+        { "text": "Open FoxiGrow", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "View Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
     }
   ]
 }

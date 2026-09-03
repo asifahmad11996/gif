@@ -221,6 +221,7 @@ def main() -> None:
     animate_banner("foxigroworderbot-api-partners.png", "foxigroworderbot-api-partners.gif", zoom_range=(1.0, 1.07), sparkle_count=12, shimmer=False, seed=140)
     animate_banner("spare-time-earn-usdt.png", "spare-time-earn-usdt.gif", zoom_range=(1.0, 1.08), sparkle_count=16, shimmer=True, seed=150)
     animate_banner("invite-friends-grow.png", "invite-friends-grow.gif", zoom_range=(1.0, 1.07), sparkle_count=14, shimmer=True, seed=160)
+    animate_banner("foxigrow-social-content-paid.png", "foxigrow-social-content-paid.gif", zoom_range=(1.0, 1.06), sparkle_count=12, shimmer=True, seed=170)
 
     print(f"Done → {OUT}")
 
