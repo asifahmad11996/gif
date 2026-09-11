@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoxiGrow — 180-Day Celebration Story</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #111;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .banner {
+      width: 1080px;
+      height: 1920px;
+      background: linear-gradient(180deg, #0a0a0a 0%, #121212 40%, #0a0a0a 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 72px 56px 64px;
+    }
+    .accent-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 10px;
+      background: linear-gradient(90deg, #ff6b00, #ffd700, #ff9500);
+    }
+    .glow {
+      position: absolute;
+      width: 900px; height: 900px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,0,0.15) 0%, transparent 65%);
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #555;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .emoji-row {
+      text-align: center;
+      font-size: 48px;
+      margin-top: 32px;
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      margin-top: 32px;
+      align-self: center;
+      background: rgba(255,215,0,0.12);
+      border: 1px solid rgba(255,215,0,0.35);
+      color: #ffd700;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 999px;
+      position: relative;
+      z-index: 1;
+    }
+    .days {
+      margin-top: 48px;
+      font-size: 140px;
+      font-weight: 900;
+      color: #ff6b00;
+      text-align: center;
+      line-height: 1;
+      position: relative;
+      z-index: 1;
+      text-shadow: 0 0 60px rgba(255,107,0,0.35);
+    }
+    .days-label {
+      font-size: 48px;
+      font-weight: 800;
+      color: #fff;
+      text-align: center;
+      margin-top: 8px;
+      position: relative;
+      z-index: 1;
+    }
+    .intro {
+      margin-top: 24px;
+      font-size: 26px;
+      color: #999;
+      text-align: center;
+      line-height: 1.5;
+      position: relative;
+      z-index: 1;
+    }
+    .gift-box {
+      margin-top: 48px;
+      background: rgba(255,255,255,0.05);
+      border: 2px solid rgba(255,215,0,0.25);
+      border-radius: 24px;
+      padding: 36px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .gift-box .title {
+      font-size: 28px;
+      color: #ffd700;
+      font-weight: 700;
+    }
+    .gift-box .amount {
+      font-size: 80px;
+      font-weight: 900;
+      color: #ffd700;
+      margin: 12px 0;
+      line-height: 1;
+    }
+    .gift-box .how {
+      font-size: 24px;
+      color: #bbb;
+      line-height: 1.5;
+    }
+    .blocks {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+    .block {
+      background: rgba(255,255,255,0.04);
+      border-left: 4px solid #ff6b00;
+      border-radius: 0 14px 14px 0;
+      padding: 22px 28px;
+    }
+    .block.gold { border-left-color: #ffd700; }
+    .block.red { border-left-color: #ff4444; }
+    .block h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ff9500;
+      margin-bottom: 8px;
+    }
+    .block.gold h3 { color: #ffd700; }
+    .block.red h3 { color: #ff6666; }
+    .block p {
+      font-size: 22px;
+      color: #bbb;
+      line-height: 1.45;
+    }
+    .cta {
+      margin-top: auto;
+      background: linear-gradient(135deg, #ff6b00, #ff9500);
+      color: #fff;
+      font-size: 34px;
+      font-weight: 800;
+      padding: 32px;
+      border-radius: 18px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .footer {
+      margin-top: 16px;
+      font-size: 22px;
+      color: #666;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .footer strong { color: #ff9500; }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="accent-bar"></div>
+    <div class="glow"></div>
+
+    <div class="logo">FoxiGrow</div>
+    <div class="emoji-row">🎉 🦊 🎁</div>
+    <div class="badge">180-DAY CELEBRATION</div>
+
+    <div class="days">180</div>
+    <div class="days-label">Days Strong</div>
+    <p class="intro">Six months of building. Now entering rapid commercial expansion.</p>
+
+    <div class="gift-box">
+      <div class="title">🎁 Celebration Gift</div>
+      <div class="amount">200 FG</div>
+      <div class="how">✅ Log in to @FoxiGrowbot to claim<br>Jul 1 – Jul 15, 2026 · 08:00 UTC+8</div>
+    </div>
+
+    <div class="blocks">
+      <div class="block gold">
+        <h3>💎 What is FG Coin?</h3>
+        <p>Official utility token — premium features, fees, rewards, partner access & future passive earning.</p>
+      </div>
+      <div class="block red">
+        <h3>📉 First Emission Reduction</h3>
+        <p>Jul 3, 2026 — mining rewards reduced by 20%. Further cuts every 180 days.</p>
+      </div>
+      <div class="block">
+        <h3>⚠️ Limited Quantity</h3>
+        <p>First come, first served. Start collecting FG today!</p>
+      </div>
+    </div>
+
+    <div class="cta">Launch @FoxiGrowbot →</div>
+    <div class="footer">Here's to the next chapter 🦊 — <strong>FoxiGrow Team</strong></div>
+  </div>
+</body>
+</html>
