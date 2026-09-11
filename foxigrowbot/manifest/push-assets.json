@@ -395,7 +395,7 @@
       "bot": "@FoxiGrowbot",
       "banner": "banners/website-launch-channel.png",
       "caption_file": "posts/website-launch-channel.txt",
-      "caption": "🌐 FoxiGrow Web is LIVE!\n\nYou can now claim and complete tasks not only in the bot — but also on the web. 💻\n\n✅ Claim & complete tasks at foxigrow.com\n✅ Still available in Telegram via @FoxiGrowBot\n✅ Same USDT rewards\n\n🔄 Bot + Web = more ways to earn\n\n👉 https://foxigrow.com/",
+      "caption": "📢 BIG UPDATE: FoxiGrow Web Version is Live! 🦊\n\nWe’re excited to announce that FoxiGrow is no longer just on Telegram — our full web task platform is officially live at foxigrow.com!\n\nNow you can claim, complete tasks, and manage your payouts on both Web and Telegram with full account synchronization!\n\n💡 Key Highlights:\n\n🌐 Web & Bot Access: Complete tasks on your desktop browser or inside Telegram.\n📋 Diverse Micro-Tasks: Earn USDT by interacting on X, YouTube, Reddit, TikTok, and Instagram.\n💰 Earn USDT + FG Coin: Get paid in USDT plus bonus FG Coins for every verified task.\n🔐 Secure & Direct: Track your live balance and request withdrawals from a low $2 minimum.\n\n🚀 Try the Web Platform Now: foxigrow.com",
       "buttons": [
         { "text": "Open Website", "url": "https://foxigrow.com/" },
         { "text": "Open Telegram Bot", "url": "https://t.me/FoxiGrowbot" }
@@ -408,7 +408,19 @@
       "bot": "@FoxiGrowbot",
       "banner": "banners/website-launch-twitter.png",
       "caption_file": "posts/website-launch-twitter.txt",
-      "caption": "🌐 foxigrow.com is LIVE\n\nClaim & complete tasks on the web — not only in the bot.\n\n✅ Web tasks interface\n✅ Same USDT rewards\n✅ Still works in @FoxiGrowBot\n\nBot + Web = more ways to earn 🚀\n\n👉 https://foxigrow.com/\n\n#FoxiGrow #USDT #EarnOnline #Telegram"
+      "caption": "🌐 FOXIGROW WEB IS NOW LIVE! 🦊\n\nYou can now complete social tasks and claim rewards directly on the web at foxigrow.com — seamlessly synced with our Telegram Bot!\n\n🔥 What’s New:\n\n• 💻 Web Interface: Browse & complete tasks on your browser or Telegram\n• 🦊 Micro-Tasks: Follow, like & subscribe across major platforms\n• 💰 Dual Earnings: Get rewarded in USDT + FG Coin bonuses\n• ⚡️ Fast Cashout: Withdraw starting at just 2 USDT\n\nEarn anywhere, anytime — on web or mobile! 👇\n🌐 foxigrow.com\n\n#FoxiGrow #Web3 #EarnCrypto #USDT #TaskPlatform"
+    },
+    {
+      "id": "website_launch_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/website-launch-stories.png",
+      "caption_file": "posts/website-launch-channel.txt",
+      "caption": "🌐 FoxiGrow Web is LIVE — claim & complete tasks on web + Telegram. Synced accounts. Same USDT rewards. 👉 foxigrow.com 🦊",
+      "buttons": [
+        { "text": "Open Web", "url": "https://foxigrow.com/" }
+      ]
     }
   ]
 }

@@ -1,18 +1,14 @@
-🌐 FoxiGrow Web is LIVE!
+📢 BIG UPDATE: FoxiGrow Web Version is Live! 🦊
 
-You can now claim and complete tasks not only in the bot — but also on the web. 💻
+We’re excited to announce that FoxiGrow is no longer just on Telegram — our full web task platform is officially live at foxigrow.com!
 
-✅ What’s new
-• Open foxigrow.com on any device
-• Claim & complete tasks in the web interface
-• Still available in Telegram via @FoxiGrowBot
-• Sign in with Google or Telegram
-• Earn USDT + FG Coin · withdraw from 2 USDT
+Now you can claim, complete tasks, and manage your payouts on both Web and Telegram with full account synchronization!
 
-🔄 Two ways to earn
-🦊 Bot: @FoxiGrowBot
-🌐 Web: https://foxigrow.com/
+💡 Key Highlights:
 
-Same tasks. Same rewards. Now on web too. 🚀
+🌐 Web & Bot Access: Complete tasks on your desktop browser or inside Telegram.
+📋 Diverse Micro-Tasks: Earn USDT by interacting on X, YouTube, Reddit, TikTok, and Instagram.
+💰 Earn USDT + FG Coin: Get paid in USDT plus bonus FG Coins for every verified task.
+🔐 Secure & Direct: Track your live balance and request withdrawals from a low $2 minimum.
 
-👉 https://foxigrow.com/
+🚀 Try the Web Platform Now: foxigrow.com
