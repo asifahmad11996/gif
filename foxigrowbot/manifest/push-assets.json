@@ -395,7 +395,7 @@
       "bot": "@FoxiGrowbot",
       "banner": "banners/website-launch-channel.png",
       "caption_file": "posts/website-launch-channel.txt",
-      "caption": "🚀 FoxiGrow Task Website is LIVE!\n\nComplete social tasks. Earn real USDT.\nNow available on the web — not only in Telegram. 🌐\n\n✅ Sign in with Google or Telegram\n✅ Follow, like, join & subscribe\n✅ Earn USDT + FG Coin\n✅ Withdraw from 2 USDT\n\n📊 698,790+ workers · $142,000+ paid\n\n👉 https://foxigrow.com/",
+      "caption": "🌐 FoxiGrow Web is LIVE!\n\nYou can now claim and complete tasks not only in the bot — but also on the web. 💻\n\n✅ Claim & complete tasks at foxigrow.com\n✅ Still available in Telegram via @FoxiGrowBot\n✅ Same USDT rewards\n\n🔄 Bot + Web = more ways to earn\n\n👉 https://foxigrow.com/",
       "buttons": [
         { "text": "Open Website", "url": "https://foxigrow.com/" },
         { "text": "Open Telegram Bot", "url": "https://t.me/FoxiGrowbot" }
@@ -408,7 +408,7 @@
       "bot": "@FoxiGrowbot",
       "banner": "banners/website-launch-twitter.png",
       "caption_file": "posts/website-launch-twitter.txt",
-      "caption": "🚀 foxigrow.com is LIVE\n\nComplete social tasks → earn real USDT\n\n✅ Sign in with Google or Telegram\n✅ Follow / like / subscribe micro-tasks\n✅ Withdraw from just 2 USDT\n\n698K+ workers · $142K+ paid\n\nStart here 👉 https://foxigrow.com/\n\n#FoxiGrow #USDT #EarnOnline #SocialTasks"
+      "caption": "🌐 foxigrow.com is LIVE\n\nClaim & complete tasks on the web — not only in the bot.\n\n✅ Web tasks interface\n✅ Same USDT rewards\n✅ Still works in @FoxiGrowBot\n\nBot + Web = more ways to earn 🚀\n\n👉 https://foxigrow.com/\n\n#FoxiGrow #USDT #EarnOnline #Telegram"
     }
   ]
 }
