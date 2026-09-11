@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoxiGrow Task Website Launch — Landscape</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #000;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .poster {
+      width: 1920px;
+      height: 1080px;
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba(255,107,0,0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 60%, rgba(59,130,246,0.06) 0%, transparent 40%),
+        linear-gradient(135deg, #060608 0%, #0a0a0e 50%, #070709 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding: 0 100px;
+      gap: 80px;
+    }
+    .accent-top {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, transparent, #ff6b00, #ff9500, #ff6b00, transparent);
+    }
+    .grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse at 40% 50%, black 25%, transparent 80%);
+    }
+    .left {
+      flex: 1.1;
+      position: relative;
+      z-index: 2;
+    }
+    .logo {
+      height: 100px;
+      width: auto;
+      display: block;
+      margin-bottom: 36px;
+    }
+    .live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,107,0,0.12);
+      border: 1px solid rgba(255,107,0,0.35);
+      border-radius: 999px;
+      padding: 10px 24px;
+      margin-bottom: 28px;
+    }
+    .live-dot {
+      width: 10px; height: 10px;
+      background: #ff6b00;
+      border-radius: 50%;
+      box-shadow: 0 0 12px #ff6b00;
+    }
+    .live-pill span {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ff9500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .headline h1 {
+      font-size: 58px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      max-width: 780px;
+    }
+    .headline h1 .accent { color: #ff6b00; }
+    .sub {
+      margin-top: 20px;
+      font-size: 32px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.7);
+    }
+    .cta {
+      margin-top: 36px;
+      display: inline-block;
+      background: linear-gradient(135deg, #ff6b00, #ff9500);
+      color: #fff;
+      font-size: 22px;
+      font-weight: 800;
+      padding: 18px 44px;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(255,107,0,0.35);
+    }
+    .right {
+      flex: 0.9;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .highlight {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-left: 4px solid #ff6b00;
+      border-radius: 0 18px 18px 0;
+      padding: 26px 32px;
+      backdrop-filter: blur(12px);
+    }
+    .highlight .icon { font-size: 36px; flex-shrink: 0; }
+    .highlight .text {
+      font-size: 26px;
+      font-weight: 600;
+      color: #eee;
+      line-height: 1.3;
+    }
+    .accent-bottom {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, rgba(255,107,0,0.5), transparent);
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="accent-top"></div>
+    <div class="grid"></div>
+
+    <div class="left">
+      <img class="logo" src="../assets/foxigrow-logo.png" alt="FoxiGrow">
+      <div class="live-pill"><span class="live-dot"></span><span>Now Live</span></div>
+      <div class="headline">
+        <h1><span class="accent">FoxiGrow</span> Task Website Is Live!</h1>
+        <p class="sub">Complete Tasks. Earn Real Rewards.</p>
+      </div>
+      <div class="cta">Start Earning Today →</div>
+    </div>
+
+    <div class="right">
+      <div class="highlight">
+        <div class="icon">🦊</div>
+        <div class="text">Complete social &amp; micro tasks</div>
+      </div>
+      <div class="highlight">
+        <div class="icon">💰</div>
+        <div class="text">Earn USDT + FG Coin</div>
+      </div>
+      <div class="highlight">
+        <div class="icon">🌍</div>
+        <div class="text">Join from anywhere in the world</div>
+      </div>
+    </div>
+
+    <div class="accent-bottom"></div>
+  </div>
+</body>
+</html>
