@@ -53,6 +53,8 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `invite-friends-grow.png` | Invite friends / community growth promo (16:9) |
 | `invite-friends-grow-vertical.png` | Same — vertical for Stories |
 | `foxigrow-social-content-paid.png` | Social content tasks — earn USDT (1:1 square) |
+| `website-launch-channel.png` | Task website launch — channel poster (16:9) |
+| `website-launch-twitter.png` | Task website launch — tweet poster (16:9) |
 
 ## GIFs
 

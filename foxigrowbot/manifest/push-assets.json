@@ -387,6 +387,28 @@
         { "text": "Open FoxiGrow", "url": "https://t.me/FoxiGrowbot" },
         { "text": "View Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
       ]
+    },
+    {
+      "id": "website_launch_channel",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/website-launch-channel.png",
+      "caption_file": "posts/website-launch-channel.txt",
+      "caption": "🚀 FoxiGrow Task Website is LIVE!\n\nComplete social tasks. Earn real USDT.\nNow available on the web — not only in Telegram. 🌐\n\n✅ Sign in with Google or Telegram\n✅ Follow, like, join & subscribe\n✅ Earn USDT + FG Coin\n✅ Withdraw from 2 USDT\n\n📊 698,790+ workers · $142,000+ paid\n\n👉 https://foxigrow.com/",
+      "buttons": [
+        { "text": "Open Website", "url": "https://foxigrow.com/" },
+        { "text": "Open Telegram Bot", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "website_launch_twitter",
+      "trigger": "announcement",
+      "type": "twitter_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/website-launch-twitter.png",
+      "caption_file": "posts/website-launch-twitter.txt",
+      "caption": "🚀 foxigrow.com is LIVE\n\nComplete social tasks → earn real USDT\n\n✅ Sign in with Google or Telegram\n✅ Follow / like / subscribe micro-tasks\n✅ Withdraw from just 2 USDT\n\n698K+ workers · $142K+ paid\n\nStart here 👉 https://foxigrow.com/\n\n#FoxiGrow #USDT #EarnOnline #SocialTasks"
     }
   ]
 }
