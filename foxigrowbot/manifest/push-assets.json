@@ -1,0 +1,426 @@
+{
+  "bot": "@FoxiGrowbot",
+  "brand": "FoxiGrow",
+  "version": "1.0.0",
+  "assets": [
+    {
+      "id": "task_center_daily",
+      "trigger": "daily_digest",
+      "banner": "banners/task-center.png",
+      "gif": "gifs/task-center-live.gif",
+      "caption": "☀️ Task Center is live — 21 tasks available, 3 drip tasks releasing soon. Earn USDT + FG today!",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
+        { "text": "View Rank", "url": "https://t.me/FoxiGrowbot/app?startapp=rank" }
+      ]
+    },
+    {
+      "id": "must_do_all",
+      "trigger": "onboarding_incomplete",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "⚡ 5 quick wins waiting — Link Twitter, TikTok, Instagram, YouTube & Facebook to earn +10 FG (+$0.10) and unlock all tasks.",
+      "buttons": [
+        { "text": "Complete Setup", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks_must_do" }
+      ]
+    },
+    {
+      "id": "must_do_twitter",
+      "trigger": "account_unlinked_twitter",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "🐦 Link your Twitter/X account — +2 FG (+$0.02). Required for follow & comment tasks.",
+      "buttons": [
+        { "text": "Link Twitter", "url": "https://t.me/FoxiGrowbot/app?startapp=link_twitter" }
+      ]
+    },
+    {
+      "id": "must_do_tiktok",
+      "trigger": "account_unlinked_tiktok",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "🎵 Link your TikTok account — +2 FG (+$0.02). Unlock follow tasks for creators like vapepieteam.",
+      "buttons": [
+        { "text": "Link TikTok", "url": "https://t.me/FoxiGrowbot/app?startapp=link_tiktok" }
+      ]
+    },
+    {
+      "id": "must_do_instagram",
+      "trigger": "account_unlinked_instagram",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "📸 Link your Instagram account — +2 FG (+$0.02). One tap, instant reward.",
+      "buttons": [
+        { "text": "Link Instagram", "url": "https://t.me/FoxiGrowbot/app?startapp=link_instagram" }
+      ]
+    },
+    {
+      "id": "must_do_youtube",
+      "trigger": "account_unlinked_youtube",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "▶️ Link your YouTube account — +2 FG (+$0.02). Required for subscribe & share tasks.",
+      "buttons": [
+        { "text": "Link YouTube", "url": "https://t.me/FoxiGrowbot/app?startapp=link_youtube" }
+      ]
+    },
+    {
+      "id": "must_do_facebook",
+      "trigger": "account_unlinked_facebook",
+      "banner": "banners/must-do-link-accounts.png",
+      "gif": "gifs/must-do-link-accounts.gif",
+      "caption": "👍 Link your Facebook account — +2 FG (+$0.02). Unlock follow & share rewards.",
+      "buttons": [
+        { "text": "Link Facebook", "url": "https://t.me/FoxiGrowbot/app?startapp=link_facebook" }
+      ]
+    },
+    {
+      "id": "high_value_20",
+      "trigger": "task_highlight",
+      "task_id": 11630,
+      "banner": "banners/high-value-20-task.png",
+      "gif": "gifs/high-value-20-task.gif",
+      "caption": "💰 $20 Task live — Reward paid in two parts: $11 + $9. Read instructions carefully. +110 FG available. Task #11630.",
+      "buttons": [
+        { "text": "View Task #11630", "url": "https://t.me/FoxiGrowbot/app?startapp=task_11630" }
+      ]
+    },
+    {
+      "id": "download_register",
+      "trigger": "task_highlight",
+      "task_id": 12209,
+      "banner": "banners/download-register.png",
+      "gif": "gifs/download-register.gif",
+      "caption": "📲 Download & Register — Earn +1 FG (+$0.15). One of today's best-value tasks. #12209",
+      "buttons": [
+        { "text": "Start Task #12209", "url": "https://t.me/FoxiGrowbot/app?startapp=task_12209" }
+      ]
+    },
+    {
+      "id": "drip_soon",
+      "trigger": "drip_release_teaser",
+      "banner": "banners/drip-tasks-soon.png",
+      "gif": "gifs/drip-tasks-soon.gif",
+      "caption": "💧 3 drip tasks releasing soon. Limited slots — stay in the app and be ready to claim first!",
+      "buttons": [
+        { "text": "Open Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "daily_top_tasks",
+      "trigger": "daily_top_picks",
+      "banner": "banners/daily-digest.png",
+      "gif": "gifs/task-center-live.gif",
+      "caption": "📬 Today's top tasks:\n1. 💰 $20 Task — +110 FG (#11630)\n2. 📲 Download & Register — +$0.15 (#12209)\n3. 🏆 (HQ) Follow SportixAI — +$0.044 (#11516)\n4. 🎵 Follow vapepieteam — +$0.03 (#12178)\n5. ✍️ Twitter Comments — +$0.02 (#12371)",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "social_follow_batch",
+      "trigger": "social_tasks_available",
+      "banner": "banners/social-follow-earn.png",
+      "gif": "gifs/social-follow-earn.gif",
+      "caption": "🔥 Follow & earn on X, TikTok, YouTube & Facebook. Rewards from +$0.03 to +$0.044 per task. 21 tasks available now!",
+      "buttons": [
+        { "text": "Browse Social Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "new_task_generic",
+      "trigger": "new_task_published",
+      "banner": "banners/task-center.png",
+      "gif": "gifs/new-task-alert.gif",
+      "caption": "🆕 New task available: {task_name}\nReward: +{fg_reward} FG (+${usd_reward})\nTask #{task_id}",
+      "buttons": [
+        { "text": "View Task", "url": "https://t.me/FoxiGrowbot/app?startapp=task_{task_id}" }
+      ]
+    },
+    {
+      "id": "low_slots_warning",
+      "trigger": "task_slots_low",
+      "banner": "banners/task-center.png",
+      "gif": "gifs/new-task-alert.gif",
+      "caption": "⚠️ {task_name} — only {slots} slots left!\n+{fg_reward} FG (+${usd_reward}). Grab it before it's gone. #{task_id}",
+      "buttons": [
+        { "text": "Claim Now", "url": "https://t.me/FoxiGrowbot/app?startapp=task_{task_id}" }
+      ]
+    },
+    {
+      "id": "idle_user_nudge",
+      "trigger": "user_idle_24h",
+      "banner": "banners/daily-digest.png",
+      "gif": "gifs/task-center-live.gif",
+      "caption": "🦊 We miss you! 21 tasks are still open on FoxiGrow. Quick wins: TikTok follow (+$0.03), Twitter follow (+$0.04).",
+      "buttons": [
+        { "text": "Earn Now", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "youtube_watch_tasks_update",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "banner": "banners/youtube-watch-update.png",
+      "gif": "gifs/youtube-watch-update.gif",
+      "caption_file": "posts/youtube-watch-tasks-update.txt",
+      "caption": "📢 Important Announcement: YouTube Watch Tasks Update\n\nHello everyone,\n\nTo improve task quality and ensure proper completion, a new requirement will be applied to all future YouTube watch tasks.\n\n✅ Requirement\n\nBefore starting any YouTube watch task (including search-based viewing or direct playback), you must enable the \"Stats for Nerds\" setting as shown in the tutorial video.\n\nHow to enable:\n1. Open the video on YouTube\n2. Right-click on the video player\n3. Select \"Stats for nerds\"\n\nOnce enabled, task completion will be based on the Dropped Frames count shown in Stats for nerds — not a fixed minimum watch time (e.g. 4500 / 7500, or as assigned per task).\n\nℹ️ Why this changed\nThis helps us verify that the video was actually played with the required setting enabled, keeping tasks fair for everyone.\n\n📌 Important Notes\n\n• Enable Stats for nerds BEFORE you start watching\n• Follow all task instructions carefully — do not skip steps\n• Check your task page for the exact Dropped Frames target\n• Submit proof only after the required count is reached\n• Submitting screenshots without proper completion may result in rejection; repeated violations may affect your account\n\n🎥 Tutorial\n\nPlease watch the attached tutorial video carefully and follow the steps exactly before starting any YouTube watch task.\n\n⏰ Effective immediately for all new YouTube watch tasks (direct and search-based).\n\nThank you for your cooperation. 🦊",
+      "buttons": [
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" },
+        { "text": "Watch Tutorial", "url": "https://t.me/FoxiGrow" }
+      ],
+      "attach_tutorial_video": true
+    },
+    {
+      "id": "project_activities_task_system",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "banner": "banners/project-activities-task-system.png",
+      "gif": "gifs/project-activities-task-system.gif",
+      "caption_file": "posts/project-activities-task-system.txt",
+      "caption": "📢 Important Notice – FoxiGrow Project Activities & Task System\n\nDear Members,\n\nOur project is based on two main types of activities and two types of tasks.\n\n✅ 1. Regular Bot Activity\n- Stay active in the bot.\n- Complete tasks regularly.\n- Earn as a normal user by participating in available opportunities.\n\n✅ 2. Community Activity\n- Stay active in our official Telegram group.\n- Help new and existing users.\n- Share useful information and assist in solving problems.\n- Become eligible for the Task Master role by making meaningful contributions.\n\n📌 Two Types of Tasks\n\n🌍 Global Tasks — available to all eligible users through the bot.\n\n🔒 High-Value Private Tasks — reserved for active community members, selected from the Telegram group.\n\n⚠️ Important: Simply sending unnecessary messages to increase activity count has no value. Real community activity means helping others, sharing useful information, and contributing to problem-solving.\n\nThank you for being a valuable part of the FoxiGrow community. 🦊",
+      "buttons": [
+        { "text": "Open FoxiGrow Bot", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "Join Community", "url": "https://t.me/FoxiGrow" }
+      ]
+    },
+    {
+      "id": "project_activities_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "banner": "banners/project-activities-task-system-vertical.png",
+      "caption_file": "posts/project-activities-task-system.txt",
+      "caption": "📢 FoxiGrow Project Activities & Task System — Regular Bot Activity + Community Activity. Global Tasks for everyone. Private Tasks for active members. 🦊",
+      "buttons": [
+        { "text": "Open Bot", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "Join Group", "url": "https://t.me/FoxiGrow" }
+      ]
+    },
+    {
+      "id": "private_tasks_task_master",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "banner": "banners/private-tasks-task-master.png",
+      "gif": "gifs/private-tasks-task-master.gif",
+      "caption_file": "posts/private-tasks-task-master.txt",
+      "caption": "🔒 High-Value Private Tasks & Task Master Role\n\nWant exclusive private events on FoxiGrow?\n\n✅ Stay active in our Telegram group\n✅ Help users and share useful info\n✅ Solve problems and contribute ideas\n\nSelected members get invited to High-Value Private Tasks and may become Task Masters.\n\n⚠️ Random messages don't count — real help does.\n\n🌍 Global Tasks = everyone in the bot\n🔒 Private Tasks = active community members\n\nStay helpful. Stay active. Get invited. 🦊",
+      "buttons": [
+        { "text": "Join Community", "url": "https://t.me/FoxiGrow" },
+        { "text": "Open Task Center", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "private_tasks_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "banner": "banners/private-tasks-task-master-vertical.png",
+      "caption_file": "posts/private-tasks-task-master.txt",
+      "caption": "🔒 Private Tasks & Task Master — help the community, get invited to exclusive high-value events. 🦊",
+      "buttons": [
+        { "text": "Join Community", "url": "https://t.me/FoxiGrow" }
+      ]
+    },
+    {
+      "id": "action_persistence_income",
+      "trigger": "promo",
+      "type": "channel_post",
+      "banner": "banners/action-persistence-income.png",
+      "gif": "gifs/action-persistence-income.gif",
+      "caption_file": "posts/action-persistence-income.txt",
+      "caption": "💪💰 Action + Persistence = Consistent Income\n\nYou don't need to grind hard every day.\n\n✅ Small daily tasks on FoxiGrow\n✅ Earn real USDT in your spare time\n✅ Invite friends → 10–20% ongoing commission\n\nDo tasks yourself + share the opportunity = long-term passive income 🔁\n\nFoxiGrow has already proven it works 🦊\n\nStart today. Stay consistent. Get paid. 🚀",
+      "buttons": [
+        { "text": "Start Earning", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "Open Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "action_persistence_twitter",
+      "trigger": "promo",
+      "type": "twitter_post",
+      "banner": "banners/action-persistence-income.png",
+      "caption": "Action + Persistence = Consistent Income 💪💰\n\n✅ Small daily tasks on FoxiGrow\n✅ Earn real USDT\n✅ 10–20% referral commission\n\nDo tasks + share = passive income 🔁\n\nStart today 🦊🚀\nt.me/FoxiGrowbot\n\n#USDT #EarnOnline #FoxiGrow"
+    },
+    {
+      "id": "action_persistence_stories",
+      "trigger": "promo",
+      "type": "stories_post",
+      "banner": "banners/action-persistence-income-vertical.png",
+      "caption_file": "posts/action-persistence-income.txt",
+      "caption": "💪 Action + Persistence = Income 💰\nSmall tasks. Real USDT. 10–20% commission. Start on FoxiGrow 🦊🚀",
+      "buttons": [
+        { "text": "Start Now", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "foxigroworderbot_launch",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/foxigroworderbot-launch.png",
+      "gif": "gifs/foxigroworderbot-launch.gif",
+      "caption_file": "posts/foxigroworderbot-launch.txt",
+      "caption": "🛒 Introducing FoxiGrowOrderBot — Official Self-Order System\n\nNeed real social media growth for your brand or project?\n\nFoxiGrowOrderBot lets you order likes, views, subscribers, comments & more — from real users inside Telegram. 🦊\n\n✅ Real users, not bots\n✅ Easy self-ordering\n✅ TikTok, Instagram, YouTube, X & more\n✅ Official FoxiGrow system\n\n🆕 NEW: Partner API is live!\n🔌 Integrate services for resale\n📦 Place orders directly via API\n🔑 API Token + Documentation in Developer section\n\n🔄 FoxiGrow ecosystem:\n🦊 @FoxiGrowBot — earn by doing tasks\n🛒 @FoxiGrowOrderBot — order growth\n🔌 Partner API — integrate & resell\n\n👉 t.me/FoxiGrowOrderBot",
+      "buttons": [
+        { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" },
+        { "text": "Earn with FoxiGrow", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "foxigroworderbot_twitter",
+      "trigger": "announcement",
+      "type": "twitter_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/foxigroworderbot-launch.png",
+      "caption": "🛒 FoxiGrowOrderBot — Official Self-Order System\n\nOrder likes, views, followers & comments from REAL users 📈\n\n🆕 Partner API now live:\n🔌 Integrate for resale\n📦 Place orders directly\n\n✅ TikTok • IG • YouTube • X\n✅ API Token + Docs in Developer section\n\n👉 t.me/FoxiGrowOrderBot\n\n#FoxiGrow #API #SocialGrowth"
+    },
+    {
+      "id": "foxigroworderbot_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/foxigroworderbot-launch-vertical.png",
+      "caption_file": "posts/foxigroworderbot-launch.txt",
+      "caption": "🛒 Order social growth from real users\nLikes • Views • Followers • Comments\n🆕 Partner API live — integrate & resell\n@FoxiGrowOrderBot 🦊🚀",
+      "buttons": [
+        { "text": "Order Now", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
+    },
+    {
+      "id": "foxigroworderbot_api_partners",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/foxigroworderbot-api-partners.png",
+      "gif": "gifs/foxigroworderbot-api-partners.gif",
+      "caption_file": "posts/foxigroworderbot-api-partners.txt",
+      "caption": "🆕 FoxiGrowOrderBot Partner API — Now Live\n\nWe've launched a new API for partners and developers. 🔌\n\n✅ Integrate FoxiGrow services for resale\n✅ Place orders directly from your platform\n✅ API Token in Developer section\n✅ Full API Documentation in the bot\n\nPerfect for agencies, resellers & developers 🦊\n\n👉 t.me/FoxiGrowOrderBot → Developer",
+      "buttons": [
+        { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" },
+        { "text": "View API Docs", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
+    },
+    {
+      "id": "earn_telegram_easy_start",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/earn-telegram-easy-start.png",
+      "caption_file": "posts/earn-telegram-easy-start.txt",
+      "caption": "🔥 The easiest way to start earning on Telegram is here.\n\nNo deposit. No crypto wallet. No complicated setup.\nJust open @FoxiGrowbot and start earning.\n\n💸 580,000+ users trust FoxiGrow\n💰 Over $112,000 paid to our community\n⚡️ Start in under a minute\n🎯 Multiple ways to earn\n🤝 Invite friends — recurring referral rewards\n\n🚀 Join today: t.me/FoxiGrowbot?startapp",
+      "buttons": [
+        { "text": "Join FoxiGrow", "url": "https://t.me/FoxiGrowbot?startapp" }
+      ]
+    },
+    {
+      "id": "boost_x_twitter",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/boost-x-twitter.png",
+      "caption_file": "posts/boost-x-twitter.txt",
+      "caption": "🚀 Boost your project on X (Twitter)!\n\nGet real followers, likes, reposts, and comments to grow your reach and engagement.\n\n⚡ Fast delivery • Real users\n\n👉 Order now: @FoxiGrowOrderBot",
+      "buttons": [
+        { "text": "Order Now", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
+    },
+    {
+      "id": "spare_time_earn_usdt",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/spare-time-earn-usdt.png",
+      "gif": "gifs/spare-time-earn-usdt.gif",
+      "caption_file": "posts/spare-time-earn-usdt.txt",
+      "caption": "⏰ Don't Let Your Spare Time Go to Waste!\n\nGot a few free minutes? There may be tasks waiting for you. 👀\n\n💰 Complete tasks → Earn USDT\n🎯 Check new opportunities regularly\n🚀 Keep your activity growing\n\n🦊 Open @FoxiGrowbot and start now!",
+      "buttons": [
+        { "text": "Open FoxiGrow", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "View Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "spare_time_stories",
+      "trigger": "promo",
+      "type": "stories_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/spare-time-earn-usdt-vertical.png",
+      "caption_file": "posts/spare-time-earn-usdt.txt",
+      "caption": "⏰ Don't let spare time go to waste! Complete tasks → Earn USDT. Open @FoxiGrowbot 🦊🚀",
+      "buttons": [
+        { "text": "Start Now", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "invite_friends_grow",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/invite-friends-grow.png",
+      "gif": "gifs/invite-friends-grow.gif",
+      "caption_file": "posts/invite-friends-grow.txt",
+      "caption": "🦊 Why Earn Alone?\n\nKnow someone looking for simple online tasks?\n\nInvite them to FoxiGrow and let them discover the available opportunities too. 🌎\n\n👥 You grow → Your friends grow → Our community grows\n\n👉 Start here: @FoxiGrowbot 🚀",
+      "buttons": [
+        { "text": "Invite Friends", "url": "https://t.me/FoxiGrowbot/app?startapp=referral" },
+        { "text": "Open FoxiGrow", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "invite_friends_stories",
+      "trigger": "promo",
+      "type": "stories_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/invite-friends-grow-vertical.png",
+      "caption_file": "posts/invite-friends-grow.txt",
+      "caption": "🦊 Why earn alone? Invite friends → You grow, they grow, community grows. @FoxiGrowbot 🚀",
+      "buttons": [
+        { "text": "Start Here", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "social_content_earn_usdt",
+      "trigger": "promo",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/foxigrow-social-content-paid.png",
+      "gif": "gifs/foxigrow-social-content-paid.gif",
+      "caption_file": "posts/social-content-earn-usdt.txt",
+      "caption": "🆕 New Feature — Get paid for content about FoxiGrow on social media!\n\nCreate videos on TikTok, YouTube & Instagram Reels and earn real USDT per task. 🎬💰\n\n✅ Simple content tasks\n✅ Earn USDT per video / per task\n\n🦊 Open @FoxiGrowbot and start now!",
+      "buttons": [
+        { "text": "Open FoxiGrow", "url": "https://t.me/FoxiGrowbot" },
+        { "text": "View Tasks", "url": "https://t.me/FoxiGrowbot/app?startapp=tasks" }
+      ]
+    },
+    {
+      "id": "website_launch_channel",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/website-launch-channel.png",
+      "caption_file": "posts/website-launch-channel.txt",
+      "caption": "📢 BIG UPDATE: FoxiGrow Web Version is Live! 🦊\n\nWe’re excited to announce that FoxiGrow is no longer just on Telegram — our full web task platform is officially live at foxigrow.com!\n\nNow you can claim, complete tasks, and manage your payouts on both Web and Telegram with full account synchronization!\n\n💡 Key Highlights:\n\n🌐 Web & Bot Access: Complete tasks on your desktop browser or inside Telegram.\n📋 Diverse Micro-Tasks: Earn USDT by interacting on X, YouTube, Reddit, TikTok, and Instagram.\n💰 Earn USDT + FG Coin: Get paid in USDT plus bonus FG Coins for every verified task.\n🔐 Secure & Direct: Track your live balance and request withdrawals from a low $2 minimum.\n\n🚀 Try the Web Platform Now: foxigrow.com",
+      "buttons": [
+        { "text": "Open Website", "url": "https://foxigrow.com/" },
+        { "text": "Open Telegram Bot", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "website_launch_twitter",
+      "trigger": "announcement",
+      "type": "twitter_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/website-launch-twitter.png",
+      "caption_file": "posts/website-launch-twitter.txt",
+      "caption": "🌐 FOXIGROW WEB IS NOW LIVE! 🦊\n\nYou can now complete social tasks and claim rewards directly on the web at foxigrow.com — seamlessly synced with our Telegram Bot!\n\n🔥 What’s New:\n\n• 💻 Web Interface: Browse & complete tasks on your browser or Telegram\n• 🦊 Micro-Tasks: Follow, like & subscribe across major platforms\n• 💰 Dual Earnings: Get rewarded in USDT + FG Coin bonuses\n• ⚡️ Fast Cashout: Withdraw starting at just 2 USDT\n\nEarn anywhere, anytime — on web or mobile! 👇\n🌐 foxigrow.com\n\n#FoxiGrow #Web3 #EarnCrypto #USDT #TaskPlatform"
+    },
+    {
+      "id": "website_launch_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/website-launch-stories.png",
+      "caption_file": "posts/website-launch-channel.txt",
+      "caption": "🌐 FoxiGrow Web is LIVE — claim & complete tasks on web + Telegram. Synced accounts. Same USDT rewards. 👉 foxigrow.com 🦊",
+      "buttons": [
+        { "text": "Open Web", "url": "https://foxigrow.com/" }
+      ]
+    }
+  ]
+}

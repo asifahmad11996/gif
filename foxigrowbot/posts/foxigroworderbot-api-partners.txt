@@ -1,0 +1,23 @@
+🆕 FoxiGrowOrderBot Partner API — Now Live
+
+We've launched a new API for partners and developers. 🔌
+
+✅ Integrate FoxiGrow services for resale
+✅ Place orders directly from your own platform
+✅ Get your API Token in the Developer section
+✅ Full API Documentation available in the bot
+
+Perfect for:
+🏢 Agencies
+🔄 Resellers
+🧑‍💻 Developers building social growth tools
+
+How to get started:
+1️⃣ Open @FoxiGrowOrderBot
+2️⃣ Go to Developer → API Token
+3️⃣ Read API Documentation
+4️⃣ Integrate and start selling or ordering
+
+Real users. Real growth. Built for partners. 🦊🚀
+
+👉 t.me/FoxiGrowOrderBot

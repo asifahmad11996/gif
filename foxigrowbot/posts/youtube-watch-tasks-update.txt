@@ -1,0 +1,35 @@
+📢 Important Announcement: YouTube Watch Tasks Update
+
+Hello everyone,
+
+To improve task quality and ensure proper completion, a new requirement will be applied to all future YouTube watch tasks.
+
+✅ Requirement
+
+Before starting any YouTube watch task (including search-based viewing or direct playback), you must enable the “Stats for Nerds” setting as shown in the tutorial video.
+
+How to enable:
+1. Open the video on YouTube
+2. Right-click on the video player
+3. Select “Stats for nerds”
+
+Once enabled, task completion will be based on the Dropped Frames count shown in Stats for nerds — not a fixed minimum watch time (e.g. 4500 / 7500, or as assigned per task).
+
+ℹ️ Why this changed
+This helps us verify that the video was actually played with the required setting enabled, keeping tasks fair for everyone.
+
+📌 Important Notes
+
+• Enable Stats for nerds BEFORE you start watching
+• Follow all task instructions carefully — do not skip steps
+• Check your task page for the exact Dropped Frames target
+• Submit proof only after the required count is reached
+• Submitting screenshots without proper completion may result in rejection; repeated violations may affect your account
+
+🎥 Tutorial
+
+Please watch the attached tutorial video carefully and follow the steps exactly before starting any YouTube watch task.
+
+⏰ Effective immediately for all new YouTube watch tasks (direct and search-based).
+
+Thank you for your cooperation. 🦊
