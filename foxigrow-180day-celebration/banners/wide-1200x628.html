@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FoxiGrow — 180-Day Celebration Wide</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #111;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .banner {
+      width: 1200px;
+      height: 628px;
+      background: linear-gradient(135deg, #0a0a0a 0%, #161616 55%, #0d0d0d 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      padding: 0 64px;
+      gap: 40px;
+    }
+    .accent-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #ff6b00, #ffd700, #ff9500);
+    }
+    .glow {
+      position: absolute;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,0,0.12) 0%, transparent 70%);
+      right: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .left { flex: 1.1; position: relative; z-index: 1; }
+    .badge {
+      display: inline-block;
+      background: rgba(255,215,0,0.12);
+      border: 1px solid rgba(255,215,0,0.35);
+      color: #ffd700;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .title {
+      font-size: 46px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.08;
+    }
+    .title em { font-style: normal; color: #ff6b00; }
+    .desc {
+      margin-top: 12px;
+      font-size: 17px;
+      color: #999;
+      line-height: 1.5;
+      max-width: 460px;
+    }
+    .cta {
+      margin-top: 20px;
+      display: inline-block;
+      background: linear-gradient(135deg, #ff6b00, #ff9500);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 12px 26px;
+      border-radius: 10px;
+    }
+    .right {
+      flex: 0.9;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .highlight {
+      background: rgba(255,215,0,0.08);
+      border: 2px solid rgba(255,215,0,0.25);
+      border-radius: 16px;
+      padding: 20px 24px;
+      text-align: center;
+    }
+    .highlight .num {
+      font-size: 52px;
+      font-weight: 900;
+      color: #ffd700;
+      line-height: 1;
+    }
+    .highlight .lbl {
+      font-size: 16px;
+      color: #aaa;
+      margin-top: 6px;
+    }
+    .card {
+      background: rgba(255,255,255,0.04);
+      border-left: 3px solid #ff6b00;
+      border-radius: 0 10px 10px 0;
+      padding: 12px 18px;
+      font-size: 15px;
+      color: #ccc;
+      line-height: 1.4;
+    }
+    .card.red { border-left-color: #ff4444; }
+    .card strong { color: #ff9500; }
+    .card.red strong { color: #ff6666; }
+    .brand {
+      position: absolute;
+      bottom: 22px;
+      right: 64px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #444;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="accent-bar"></div>
+    <div class="glow"></div>
+
+    <div class="left">
+      <div class="badge">🎉 180-DAY CELEBRATION</div>
+      <h1 class="title"><em>180 Days</em> of FoxiGrow<br>+ FG Emission Reduction</h1>
+      <p class="desc">Celebrating six months of growth. Claim your free FG Coins and prepare for the first 20% emission cut on July 3, 2026.</p>
+      <div class="cta">Launch @FoxiGrowbot →</div>
+    </div>
+
+    <div class="right">
+      <div class="highlight">
+        <div class="num">200 FG</div>
+        <div class="lbl">Free gift · Jul 1–15, 2026</div>
+      </div>
+      <div class="card"><strong>🎁 Claim:</strong> Log in to @FoxiGrowbot · Limited quantity, FCFS</div>
+      <div class="card red"><strong>📉 Jul 3:</strong> First emission reduction — mining rewards −20%</div>
+    </div>
+
+    <div class="brand">FoxiGrow 🦊</div>
+  </div>
+</body>
+</html>
