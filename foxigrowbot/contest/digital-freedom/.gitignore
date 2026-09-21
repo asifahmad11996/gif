@@ -1,0 +1,7 @@
+frames/
+audio/
+output/*_silent.mp4
+output/0*.mp4
+output/merged_no_music.mp4
+output/music.m4a
+output/concat.txt

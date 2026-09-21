@@ -1,0 +1,38 @@
+# Digital Freedom Contest — Video Script (75s vertical)
+# Source speech: https://www.youtube.com/watch?v=1Yq_5aDdJ24
+
+[HOOK - scene_titanic]
+The ship is already sinking.
+
+[scene_speaker]
+Pavel Durov at the Oslo Freedom Forum:
+
+[scene_titanic]
+"Our personal freedoms have been eroded everywhere in the world — almost without exception."
+
+[scene_surveillance]
+He compared it to the Titanic. People refused to leave for two hours after the iceberg hit.
+
+[scene_surveillance]
+Governments now ask you to give up privacy for safety.
+
+[scene_freedom - emphasis]
+"This deal is always a scam."
+
+[scene_freedom]
+Russia banned Telegram for refusing mass surveillance.
+
+[scene_freedom]
+Yet ninety-five percent of Russian teenagers still use it every month.
+
+[scene_speaker]
+"If the ship of Western freedom sinks, the rest of the world will follow."
+
+[scene_titanic - CTA]
+We don't get a backup civilization.
+
+[scene_freedom - CTA]
+Fix the ship. Defend digital freedom.
+
+[END CARD]
+Digital Freedom Contest | t.me/FoxiGrowbot
