@@ -56,6 +56,8 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `website-launch-channel.png` | Web version live — channel poster (16:9) |
 | `website-launch-twitter.png` | Web version live — tweet poster (16:9) |
 | `website-launch-stories.png` | Web version live — Stories (9:16) |
+| `binance-payment-orderbot.png` | Binance payment option — OrderBot (16:9) |
+| `binance-payment-orderbot-twitter.png` | Same — Twitter/X version (16:9) |
 
 ## GIFs
 
