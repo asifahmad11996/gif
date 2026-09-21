@@ -442,6 +442,42 @@
       "banner": "banners/binance-payment-orderbot-twitter.png",
       "caption_file": "posts/binance-payment-orderbot.txt",
       "caption": "📢 Binance payment is LIVE in @FoxiGrowOrderBot\n\n💸 Pay for FoxiGrow orders with Binance\n⚡️ Fast & convenient\n🛒 Easy ordering in Telegram\n\n👉 t.me/FoxiGrowOrderBot\n\n#FoxiGrow #Binance #SMM"
+    },
+    {
+      "id": "binance_payment_alt_minimal",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/binance-payment-alt-minimal.png",
+      "caption_file": "posts/binance-payment-orderbot.txt",
+      "caption": "📢 New Payment Method: Binance is Now Available\n\n💸 Pay for your FoxiGrow orders with Binance! 🦊\n\n👉 @FoxiGrowOrderBot",
+      "buttons": [
+        { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
+    },
+    {
+      "id": "binance_payment_alt_yellow",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/binance-payment-alt-yellow.png",
+      "caption_file": "posts/binance-payment-orderbot.txt",
+      "caption": "📢 New Payment Method: Binance is Now Available\n\n💸 Pay for your FoxiGrow orders with Binance! 🦊\n\n👉 @FoxiGrowOrderBot",
+      "buttons": [
+        { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
+    },
+    {
+      "id": "binance_payment_alt_light",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowOrderBot",
+      "banner": "banners/binance-payment-alt-light.png",
+      "caption_file": "posts/binance-payment-orderbot.txt",
+      "caption": "📢 New Payment Method: Binance is Now Available\n\n💸 Pay for your FoxiGrow orders with Binance! 🦊\n\n👉 @FoxiGrowOrderBot",
+      "buttons": [
+        { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" }
+      ]
     }
   ]
 }

@@ -58,6 +58,9 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `website-launch-stories.png` | Web version live — Stories (9:16) |
 | `binance-payment-orderbot.png` | Binance payment option — OrderBot (16:9) |
 | `binance-payment-orderbot-twitter.png` | Same — Twitter/X version (16:9) |
+| `binance-payment-alt-minimal.png` | Binance pay — clean minimal dark (alt) |
+| `binance-payment-alt-yellow.png` | Binance pay — bold yellow geometric (alt) |
+| `binance-payment-alt-light.png` | Binance pay — light SaaS UI (alt) |
 
 ## GIFs
 
