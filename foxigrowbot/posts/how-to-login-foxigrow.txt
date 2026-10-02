@@ -1,0 +1,37 @@
+🔐 How to Log In to Your FoxiGrow Account
+
+You can access your FoxiGrow account on the website using Telegram or Google.
+
+1️⃣ Log In with Telegram
+Open Google Chrome or your preferred browser.
+Visit foxigrow.com.
+Click Start Earning.
+Complete the CAPTCHA verification.
+Select Continue with Telegram.
+Complete the authorization in Telegram.
+Once authorized, you’ll be logged in and can access available tasks.
+
+2️⃣ Log In with Google
+
+If you’ve already connected a Google account to your FoxiGrow account:
+
+Open foxigrow.com.
+Click Continue with Google.
+Select your connected Google account.
+Complete the login process.
+
+⚠️ Important: Link Your Google Account
+
+We strongly recommend connecting a Google account to your FoxiGrow account for account recovery and additional security.
+
+After logging in with Telegram:
+
+👉 Profile → Link → Google Account → Connect
+
+You can also connect your Google account through your FoxiGrow Telegram account using the same option.
+
+💡 Why connect Google?
+
+If you ever lose access to your Telegram account, a connected Google account can help you recover access to your FoxiGrow account and associated data.
+
+🔐 Connect your Google account today and keep your FoxiGrow account protected.

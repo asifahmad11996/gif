@@ -478,6 +478,32 @@
       "buttons": [
         { "text": "Open Order Bot", "url": "https://t.me/FoxiGrowOrderBot" }
       ]
+    },
+    {
+      "id": "how_to_login_channel",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/how-to-login-channel.png",
+      "caption_file": "posts/how-to-login-foxigrow.txt",
+      "caption": "🔐 How to Log In to Your FoxiGrow Account\n\nYou can access your FoxiGrow account on the website using Telegram or Google.\n\n1️⃣ Log In with Telegram\nOpen Google Chrome or your preferred browser.\nVisit foxigrow.com.\nClick Start Earning.\nComplete the CAPTCHA verification.\nSelect Continue with Telegram.\nComplete the authorization in Telegram.\nOnce authorized, you’ll be logged in and can access available tasks.\n\n2️⃣ Log In with Google\n\nIf you’ve already connected a Google account to your FoxiGrow account:\n\nOpen foxigrow.com.\nClick Continue with Google.\nSelect your connected Google account.\nComplete the login process.\n\n⚠️ Important: Link Your Google Account\n\nWe strongly recommend connecting a Google account to your FoxiGrow account for account recovery and additional security.\n\nAfter logging in with Telegram:\n\n👉 Profile → Link → Google Account → Connect\n\nYou can also connect your Google account through your FoxiGrow Telegram account using the same option.\n\n💡 Why connect Google?\n\nIf you ever lose access to your Telegram account, a connected Google account can help you recover access to your FoxiGrow account and associated data.\n\n🔐 Connect your Google account today and keep your FoxiGrow account protected.",
+      "buttons": [
+        { "text": "Open foxigrow.com", "url": "https://foxigrow.com/" },
+        { "text": "Open Telegram Bot", "url": "https://t.me/FoxiGrowbot" }
+      ]
+    },
+    {
+      "id": "how_to_login_minimal",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiGrowbot",
+      "banner": "banners/how-to-login-minimal.png",
+      "caption_file": "posts/how-to-login-foxigrow.txt",
+      "caption": "🔐 How to Log In to Your FoxiGrow Account\n\nAccess foxigrow.com with Telegram or Google.\n\n⚠️ Link Google for recovery: Profile → Link → Google Account → Connect\n\n👉 https://foxigrow.com/",
+      "buttons": [
+        { "text": "Open foxigrow.com", "url": "https://foxigrow.com/" },
+        { "text": "Connect Google", "url": "https://foxigrow.com/" }
+      ]
     }
   ]
 }

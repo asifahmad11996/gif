@@ -61,6 +61,8 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `binance-payment-alt-minimal.png` | Binance pay — clean minimal dark (alt) |
 | `binance-payment-alt-yellow.png` | Binance pay — bold yellow geometric (alt) |
 | `binance-payment-alt-light.png` | Binance pay — light SaaS UI (alt) |
+| `how-to-login-channel.png` | How to log in (Telegram / Google) — channel (16:9) |
+| `how-to-login-minimal.png` | How to log in — clean minimal alt (16:9) |
 
 ## GIFs
 
