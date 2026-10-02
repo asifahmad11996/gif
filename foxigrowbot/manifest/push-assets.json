@@ -504,6 +504,30 @@
         { "text": "Open foxigrow.com", "url": "https://foxigrow.com/" },
         { "text": "Connect Google", "url": "https://foxigrow.com/" }
       ]
+    },
+    {
+      "id": "polymarket_2usdt_channel",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiTaskBot",
+      "banner": "banners/polymarket-2usdt-channel.png",
+      "caption_file": "posts/polymarket-2usdt-task.txt",
+      "caption": "💰 The 2 USDT Polymarket Task Is LIVE Again!\n\nThe 2 USDT Polymarket task is back! 🎉\n\nComplete the required steps and receive a 2 USDT reward.\n\n🟢 Task Requirements\n\n✅ Sign up using the provided link\n✅ Deposit more than 20 USDC\n✅ No trading required\n✅ No trading fees — you only need to make the required deposit\n\n📋 How to Complete the Task\n\n1️⃣ Sign up\nUse the provided link and register with your email address.\n\n2️⃣ Make a deposit\nDeposit more than 20 USDC into your account.\n\n📝 Required Information\n\nPlease submit:\n\n📧 The email address used for registration\n\n📸 Required Screenshots\n\nYou must provide:\n\n1️⃣ Deposit screenshot\nShow the completed 20+ USDC deposit and the deposit timestamp.\n\n2️⃣ Account screenshot\nShow your Polymarket account dashboard/profile page.\n\n⚠️ Important: Make sure all submitted information and screenshots are clear and match your registered account.\n\nIf the required information is missing, incorrect, or cannot be matched with our records, your task may not be approved or verified.\n\n💰 Reward: 2 USDT\n\n🦊 Complete the task through @FoxiTaskBot.",
+      "buttons": [
+        { "text": "Open FoxiTaskBot", "url": "https://t.me/FoxiTaskBot" }
+      ]
+    },
+    {
+      "id": "polymarket_2usdt_minimal",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiTaskBot",
+      "banner": "banners/polymarket-2usdt-minimal.png",
+      "caption_file": "posts/polymarket-2usdt-task.txt",
+      "caption": "💰 The 2 USDT Polymarket Task Is LIVE Again!\n\nDeposit 20+ USDC. No trading. Earn 2 USDT.\n\n🦊 Complete via @FoxiTaskBot",
+      "buttons": [
+        { "text": "Open FoxiTaskBot", "url": "https://t.me/FoxiTaskBot" }
+      ]
     }
   ]
 }

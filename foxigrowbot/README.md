@@ -63,6 +63,8 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `binance-payment-alt-light.png` | Binance pay — light SaaS UI (alt) |
 | `how-to-login-channel.png` | How to log in (Telegram / Google) — channel (16:9) |
 | `how-to-login-minimal.png` | How to log in — clean minimal alt (16:9) |
+| `polymarket-2usdt-channel.png` | Polymarket 2 USDT task LIVE — channel (16:9) |
+| `polymarket-2usdt-minimal.png` | Polymarket 2 USDT task — clean minimal alt (16:9) |
 
 ## GIFs
 
