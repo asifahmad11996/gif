@@ -65,9 +65,11 @@ cd foxigrowbot && python3 scripts/resize_banners.py
 | `how-to-login-minimal.png` | How to log in — clean minimal alt (16:9) |
 | `polymarket-2usdt-channel.png` | Polymarket 2 USDT task LIVE — channel (16:9) |
 | `polymarket-2usdt-minimal.png` | Polymarket 2 USDT task — clean minimal alt (16:9) |
-| `welcome-back-channel.png` | Welcome Back campaign — channel mascot (16:9) |
-| `welcome-back-minimal.png` | Welcome Back campaign — clean minimal alt (16:9) |
-| `welcome-back-stories.png` | Welcome Back campaign — Stories (9:16) |
+| `welcome-back-channel.png` | Welcome Back — Bring Friends Back (brown sunburst, 16:9) |
+| `welcome-back-minimal.png` | Welcome Back campaign — clean minimal navy alt (16:9) |
+| `welcome-back-stories.png` | Welcome Back — Bring Friends Back Stories (9:16) |
+| `welcome-back-bring-friends.png` | Same as channel — Bring Friends Back layout (16:9) |
+| `welcome-back-bring-friends-stories.png` | Same as stories — Bring Friends Back (9:16) |
 
 ## GIFs
 
