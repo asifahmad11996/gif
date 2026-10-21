@@ -528,6 +528,43 @@
       "buttons": [
         { "text": "Open FoxiTaskBot", "url": "https://t.me/FoxiTaskBot" }
       ]
+    },
+    {
+      "id": "welcome_back_channel",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiTaskBot",
+      "banner": "banners/welcome-back-channel.png",
+      "caption_file": "posts/welcome-back-campaign.txt",
+      "caption": "🦊 FOXIGROW “WELCOME BACK” CAMPAIGN\n\nWelcome back to FoxiGrow — your earning journey continues! 🚀\n\nWe’re excited to reconnect with our longtime community members following our transition to the new Telegram Mini App, @FoxiTaskBot.\n\nInvite former FoxiGrow users or bring in new members to earn campaign points and share a 200 USDT prize pool! 🎁\n\n🎁 Welcome Back Gift: Eligible returning users who accept an invitation will receive 50 FGcoins.\n\n📌 Who Can Participate?\n\nReturning users are existing FoxiGrow users who have not opened the @FoxiTaskBot Mini App or logged into https://foxigrow.com/ during the 7 days before the campaign starts.\n\n⭐ How to Earn Points\n\n🔄 Returning user: Earn 2 points when they check in and another 3 points when they submit their first task.\n🆕 New user: Earn 3 points whenever they check in or submit a task.\n\n🔗 How to Invite Users\n\nUse your unique invitation code on the campaign page to invite eligible returning users or new users.\n\nImportant: This campaign invitation code is separate from your regular referral code and referral commissions.\n\n💰 200 USDT Prize Pool\n\nRewards will be distributed proportionally according to the points earned by each participant.\n\n🏆 Maximum reward: 50 USDT per participant.\n\nDon't miss this opportunity to reconnect with old friends, welcome new members, and earn rewards together!\n\n👉 Open @FoxiTaskBot and join the campaign today!\n\n🦊 FoxiGrow — Grow Together, Earn Together!",
+      "buttons": [
+        { "text": "Join Campaign", "url": "https://t.me/FoxiTaskBot" },
+        { "text": "Open Website", "url": "https://foxigrow.com/" }
+      ]
+    },
+    {
+      "id": "welcome_back_minimal",
+      "trigger": "announcement",
+      "type": "channel_post",
+      "bot": "@FoxiTaskBot",
+      "banner": "banners/welcome-back-minimal.png",
+      "caption_file": "posts/welcome-back-campaign.txt",
+      "caption": "🦊 WELCOME BACK to FoxiGrow!\n\nInvite returning & new users · Earn campaign points · Share a 200 USDT prize pool\n🎁 Returning users get 50 FGcoins\n🏆 Max 50 USDT per participant\n\n👉 Join in @FoxiTaskBot",
+      "buttons": [
+        { "text": "Join Campaign", "url": "https://t.me/FoxiTaskBot" }
+      ]
+    },
+    {
+      "id": "welcome_back_stories",
+      "trigger": "announcement",
+      "type": "stories_post",
+      "bot": "@FoxiTaskBot",
+      "banner": "banners/welcome-back-stories.png",
+      "caption_file": "posts/welcome-back-campaign.txt",
+      "caption": "🦊 Welcome Back campaign LIVE — share 200 USDT · 50 FGcoins gift for returning users · Join @FoxiTaskBot",
+      "buttons": [
+        { "text": "Join Campaign", "url": "https://t.me/FoxiTaskBot" }
+      ]
     }
   ]
 }
